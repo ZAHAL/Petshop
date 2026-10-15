@@ -98,6 +98,17 @@ textarea { width: 100%; min-height: 76px; resize: vertical; }
 .meal-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 12px 14px; min-width: 0; }
 .meal.now .meal-card { border-color: var(--citrus); }
 .meal.done .meal-card { opacity: .78; }
+.meal.off .dot { background: var(--warn); border-color: var(--warn); }
+.tag.off { background: var(--citrus-soft); color: var(--warn); }
+.offbox { margin-top: 10px; background: var(--citrus-soft); border-radius: 10px; padding: 10px 12px; font-size: .9rem; display: flex; flex-direction: column; gap: 4px; }
+.offbox .tot { font-family: var(--font-display); font-weight: 700; }
+.offform { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; border-top: 1px dashed var(--line); padding-top: 10px; }
+.offform .chips button { font-size: .8rem; padding: 4px 10px; }
+.offlines { list-style: none; margin: 0; padding: 0; font-size: .9rem; }
+.offlines li { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 4px 0; }
+.offlines .qty { display: flex; gap: 4px; align-items: center; }
+.offlines .qty button { width: 28px; height: 28px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); padding: 0; }
+.offform input[type=text] { font: inherit; color: var(--fg); background: var(--sunk); border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; flex: 1 1 140px; min-width: 0; }
 .meal-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
 .tag { font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; padding: 2px 8px; border-radius: 999px; background: var(--sunk); color: var(--muted); white-space: nowrap; }
 .tag.now { background: var(--citrus-soft); color: var(--warn); }
@@ -345,6 +356,15 @@ function optNutri(mealId, opt) {
   return { items, t };
 }
 
+// Itens comuns fora do plano (kcal aproximadas por unidade)
+const OFF_PRESETS = [
+  ['Pizza salgada (fatia de pizzaria)', 285], ['Pizza doce (fatia)', 300], ['Hambúrguer de lanchonete', 550],
+  ['Batata frita (porção pequena)', 300], ['Salgado frito (coxinha, pastel)', 280], ['Refrigerante (lata)', 140],
+  ['Cerveja (lata)', 150], ['Doce ou sobremesa', 250],
+];
+const offTotal = lines => lines.reduce((s, l) => s + l.k * l.q, 0);
+const offText = off => off.lines.map(l => (l.q > 1 ? l.q + '× ' : '') + l.n).join(', ');
+
 const OMEGA_FIM = '2027-01-08'; // 90 dias a partir de 10/10/2026
 const SUPPS = [
   { id: 'creatina', name: 'Creatina 3g', hint: 'Junto de uma refeição ou lanche com carboidrato' },
@@ -377,7 +397,7 @@ const todayKey = () => keyOf(new Date());
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const fmt1 = n => n.toFixed(1).replace('.', ',');
 
-let view = { tab: 'hoje', day: todayKey(), group: 'frutas', q: '', confirmDel: null, confirmImport: false };
+let view = { offForm: null, offDraft: [], tab: 'hoje', day: todayKey(), group: 'frutas', q: '', confirmDel: null, confirmImport: false };
 
 function day(k) {
   if (!S.days[k]) S.days[k] = { treino: false, meals: {}, supl: {}, hab: {}, nota: '' };
@@ -410,7 +430,7 @@ function renderItem(raw, checked, mealId, idx) {
 function currentMealId(k) {
   if (k !== todayKey()) return null;
   const d = day(k), now = new Date(), mins = now.getHours() * 60 + now.getMinutes();
-  const list = activeMeals(d).filter(m => !d.meals[m.id]?.done);
+  const list = activeMeals(d).filter(m => !d.meals[m.id]?.done && !d.meals[m.id]?.off);
   // a refeição "da vez" é a primeira não feita cujo horário já chegou (com 45 min de antecedência), senão a próxima
   let cur = null;
   for (const m of list) { const [h, mi] = m.time.split(':').map(Number); if (h * 60 + mi - 45 <= mins) cur = m.id; }
@@ -421,6 +441,24 @@ function ring(pct) {
   const r = 32, c = 2 * Math.PI * r;
   return `<svg viewBox="0 0 78 78" aria-hidden="true"><circle cx="39" cy="39" r="${r}" fill="none" stroke="var(--sunk)" stroke-width="8"/>
     <circle cx="39" cy="39" r="${r}" fill="none" stroke="${pct >= 1 ? 'var(--ok)' : 'var(--forest)'}" stroke-width="8" stroke-linecap="round" stroke-dasharray="${c}" stroke-dashoffset="${c * (1 - pct)}"/></svg>`;
+}
+
+function offFormHtml() {
+  const lines = view.offDraft, tot = offTotal(lines);
+  return `<div class="offform">
+    <div class="eyebrow">O que você comeu no lugar?</div>
+    <div class="chips">${OFF_PRESETS.map(([n, k], i) => `<button data-offpreset="${i}">${n} <span class="muted num">${k}</span></button>`).join('')}</div>
+    <div class="row"><input type="text" id="offName" placeholder="Outro alimento" aria-label="Outro alimento">
+      <input type="number" id="offKcal" placeholder="kcal" min="0" max="5000" style="width:84px" aria-label="Calorias">
+      <button class="btn" data-offcustom>Adicionar</button></div>
+    ${lines.length ? `<ul class="offlines">${lines.map((l, i) => `<li><span>${esc(l.n)} <span class="muted num">· ${Math.round(l.k * l.q)} kcal</span></span>
+      <span class="qty"><button data-offq="${i}" data-d="-1" aria-label="Menos">−</button><b class="num">${l.q}</b><button data-offq="${i}" data-d="1" aria-label="Mais">+</button></span></li>`).join('')}</ul>` : ''}
+    <div class="row" style="justify-content:space-between">
+      <b class="num">≈ ${Math.round(tot)} kcal</b>
+      <span class="row"><button class="btn ghost" data-offcancel>Cancelar</button><button class="btn primary" data-offsave ${lines.length ? '' : 'disabled'}>Registrar</button></span>
+    </div>
+    <p class="muted" style="margin:0;font-size:.8rem">Valores aproximados. Se souber o valor real (rótulo, app do restaurante), use “Outro alimento”.</p>
+  </div>`;
 }
 
 function renderHoje() {
@@ -437,9 +475,17 @@ function renderHoje() {
   const meals = activeMeals(d).map(m => {
     const ms = mealState(d, m.id), opt = m.options[ms.opt] || m.options[0];
     const isNow = cur === m.id;
-    const tag = ms.done ? '<span class="tag ok">Feito</span>' : isNow ? '<span class="tag now">Agora</span>' : '';
+    const tag = ms.off ? '<span class="tag off">Fora do plano</span>' : ms.done ? '<span class="tag ok">Feito</span>' : isNow ? '<span class="tag now">Agora</span>' : '';
     const opts = m.options.length > 1 ? `<div class="opts" role="group" aria-label="Opções">${m.options.map((_, i) =>
       `<button data-opt="${i}" data-meal="${m.id}" aria-pressed="${i === ms.opt}">Opção ${i + 1}</button>`).join('')}</div>` : '';
+    if (ms.off) return `<div class="meal off">
+      <div><div class="time num">${m.time}</div><div class="dot"></div></div>
+      <div class="meal-card">
+        <div class="meal-top"><h3>${m.name}</h3>${tag}</div>
+        <div class="offbox"><span>${esc(offText(ms.off))}</span><span class="tot num">≈ ${Math.round(ms.off.kcal)} kcal</span></div>
+        <div class="meal-actions"><button class="btn ghost" data-unoff="${m.id}">Desfazer</button></div>
+      </div></div>`;
+    const form = view.offForm === m.id ? offFormHtml() : '';
     return `<div class="meal ${ms.done ? 'done' : ''} ${isNow ? 'now' : ''}">
       <div><div class="time num">${m.time}</div><div class="dot"></div></div>
       <div class="meal-card">
@@ -447,10 +493,10 @@ function renderHoje() {
         ${opts}
         <ul class="items">${opt.items.map((it, i) => renderItem(it, ms.items[i], m.id, i)).join('')}</ul>
         ${opt.obs ? `<div class="obs">${opt.obs}</div>` : ''}
-        <div class="meal-actions">
+        ${form || `<div class="meal-actions">
           ${ms.done ? `<button class="btn ghost" data-undo="${m.id}">Desfazer</button>`
-                    : `<button class="btn primary" data-done="${m.id}">Comi esta refeição</button>`}
-        </div>
+                    : `<button class="btn primary" data-done="${m.id}">Comi esta refeição</button><button class="btn" data-offopen="${m.id}">Comi outra coisa</button>`}
+        </div>`}
       </div></div>`;
   }).join('');
 
@@ -669,7 +715,9 @@ function renderKcal() {
   const r0 = n => Math.round(n);
   const meals = activeMeals(d).map(m => { const ms = mealState(d, m.id); return { m, ms, nu: optNutri(m.id, ms.opt) }; });
   const plan = { k: 0, p: 0, c: 0, g: 0 }; let eaten = 0;
-  meals.forEach(({ ms, nu }) => { for (const x in plan) plan[x] += nu.t[x]; if (ms.done) eaten += nu.t.k; });
+  let real = 0, offK = 0;
+  meals.forEach(({ ms, nu }) => { for (const x in plan) plan[x] += nu.t[x]; if (ms.done) eaten += nu.t.k; if (ms.off) { eaten += ms.off.kcal; offK += ms.off.kcal - nu.t.k; } real += ms.off ? ms.off.kcal : nu.t.k; });
+  const hasOff = meals.some(x => x.ms.off);
   const pk = plan.p * 4, ck = plan.c * 4, gk = plan.g * 9, mk = pk + ck + gk || 1;
 
   // faixa do dia: soma das opções mais leves e mais pesadas
@@ -703,7 +751,8 @@ function renderKcal() {
       <div class="macrobar" role="img" aria-label="Divisão das calorias por macronutriente">
         <span class="m-p" style="width:${pk / mk * 100}%"></span><span class="m-c" style="width:${ck / mk * 100}%"></span><span class="m-g" style="width:${gk / mk * 100}%"></span></div>
       <div class="mlegend num"><span><i class="m-p"></i>Proteína ${r0(pk / mk * 100)}%</span><span><i class="m-c"></i>Carboidrato ${r0(ck / mk * 100)}%</span><span><i class="m-g"></i>Gordura ${r0(gk / mk * 100)}%</span></div>
-      <ul class="kitems" style="margin:0">${meals.map(({ m, ms, nu }) => `<li><span>${m.name}${m.options.length > 1 ? ` <span class="muted">· opção ${ms.opt + 1}</span>` : ''}${ms.done ? ' <span class="tag ok">Feito</span>' : ''}</span><span class="v num">${r0(nu.t.k)} kcal</span></li>`).join('')}</ul>
+      <ul class="kitems" style="margin:0">${meals.map(({ m, ms, nu }) => `<li><span>${m.name}${m.options.length > 1 ? ` <span class="muted">· opção ${ms.opt + 1}</span>` : ''}${ms.done ? ' <span class="tag ok">Feito</span>' : ''}${ms.off ? ' <span class="tag off">Fora do plano</span>' : ''}</span><span class="v num">${ms.off ? `<s class="muted">${r0(nu.t.k)}</s> ${r0(ms.off.kcal)}` : r0(nu.t.k)} kcal</span></li>`).join('')}</ul>
+      ${hasOff ? `<div class="warnbox">Com o que saiu do plano, o dia fica em <b class="num">≈ ${r0(real)} kcal</b> (${offK >= 0 ? '+' : '−'}${r0(Math.abs(offK))} kcal em relação ao planejado).</div>` : ''}
       <p class="muted" style="margin:0;font-size:.82rem">Troque as opções e o dia de treino na aba Hoje. Abaixo, a barra amarela marca a opção escolhida; toque numa opção para ver os itens.</p>
     </div>
     <div class="panel stack" style="gap:6px">
@@ -756,9 +805,11 @@ function weekSummary() {
     const k = keyOf(d), sc = score(k), dd = S.days[k];
     const label = d.toLocaleDateString('pt-BR', { weekday: 'short', day: '2-digit', month: '2-digit' });
     if (!sc) { lines.push(`• ${label}: sem registro`); continue; }
-    const falt = activeMeals(dd).filter(m => !dd.meals[m.id]?.done).map(m => m.name.toLowerCase());
+    const falt = activeMeals(dd).filter(m => !dd.meals[m.id]?.done && !dd.meals[m.id]?.off).map(m => m.name.toLowerCase());
+    const offs = activeMeals(dd).filter(m => dd.meals[m.id]?.off).map(m => `${m.name.toLowerCase()} (${offText(dd.meals[m.id].off)}, ~${Math.round(dd.meals[m.id].off.kcal)} kcal)`);
     let l = `• ${label}: ${sc.mealsDone}/${sc.mealsTotal} refeições${dd.treino ? ' (treino)' : ''}`;
     if (falt.length && falt.length < sc.mealsTotal) l += ` · faltou: ${falt.join(', ')}`;
+    if (offs.length) l += ` · fora do plano: ${offs.join('; ')}`;
     const sup = activeSupps(k).filter(s => !dd.supl[s.id]);
     if (sup.length) l += ` · suplementos pendentes: ${sup.length}`;
     if (dd.nota && dd.nota.trim()) l += `\n   obs: ${dd.nota.trim()}`;
@@ -782,13 +833,30 @@ app.addEventListener('click', e => {
   const t = e.target;
   const g = t.closest('[data-group]'); if (g) { e.preventDefault(); openGroup(g.dataset.group); return; }
   const nav = t.closest('[data-nav]');
-  if (nav) { const n = +nav.dataset.nav; if (n === 0) view.day = todayKey(); else { const d = parseKey(view.day); d.setDate(d.getDate() + n); view.day = keyOf(d); } render(); return; }
+  if (nav) { view.offForm = null; view.offDraft = []; const n = +nav.dataset.nav; if (n === 0) view.day = todayKey(); else { const d = parseKey(view.day); d.setDate(d.getDate() + n); view.day = keyOf(d); } render(); return; }
   if (t.closest('#treino')) { const d = day(view.day); d.treino = !d.treino; save(); render(); return; }
   const o = t.closest('[data-opt]');
   if (o) { const ms = mealState(day(view.day), o.dataset.meal); const n = +o.dataset.opt; if (ms.opt !== n) { ms.opt = n; ms.items = {}; } save(); render(); return; }
   const dn = t.closest('[data-done]');
   if (dn) { const m = MEALS.find(x => x.id === dn.dataset.done), ms = mealState(day(view.day), m.id);
-    ms.done = true; (m.options[ms.opt] || m.options[0]).items.forEach((_, i) => ms.items[i] = true); save(); render(); toast(m.name + ' registrado'); return; }
+    ms.done = true; delete ms.off; (m.options[ms.opt] || m.options[0]).items.forEach((_, i) => ms.items[i] = true); save(); render(); toast(m.name + ' registrado'); return; }
+  const oo = t.closest('[data-offopen]'); if (oo) { view.offForm = oo.dataset.offopen; view.offDraft = []; render(); return; }
+  if (t.closest('[data-offcancel]')) { view.offForm = null; view.offDraft = []; render(); return; }
+  const op = t.closest('[data-offpreset]');
+  if (op) { const [n, k] = OFF_PRESETS[+op.dataset.offpreset]; const l = view.offDraft.find(x => x.n === n); if (l) l.q++; else view.offDraft.push({ n, k, q: 1 }); render(); return; }
+  if (t.closest('[data-offcustom]')) {
+    const n = document.getElementById('offName').value.trim(), k = parseFloat(document.getElementById('offKcal').value);
+    if (!n || !(k >= 0)) { toast('Informe o alimento e as calorias'); return; }
+    view.offDraft.push({ n, k, q: 1 }); render(); return;
+  }
+  const oq = t.closest('[data-offq]');
+  if (oq) { const l = view.offDraft[+oq.dataset.offq]; l.q += +oq.dataset.d; if (l.q <= 0) view.offDraft.splice(+oq.dataset.offq, 1); render(); return; }
+  if (t.closest('[data-offsave]')) {
+    const ms = mealState(day(view.day), view.offForm), m = MEALS.find(x => x.id === view.offForm);
+    ms.off = { lines: view.offDraft, kcal: offTotal(view.offDraft) }; ms.done = false; ms.items = {};
+    view.offForm = null; view.offDraft = []; save(); render(); toast(m.name + ' registrado como fora do plano'); return;
+  }
+  const uo = t.closest('[data-unoff]'); if (uo) { delete mealState(day(view.day), uo.dataset.unoff).off; save(); render(); return; }
   const un = t.closest('[data-undo]'); if (un) { mealState(day(view.day), un.dataset.undo).done = false; save(); render(); return; }
   const ch = t.closest('[data-chip]'); if (ch) { view.group = ch.dataset.chip; render(); return; }
   const ad = t.closest('[data-askdel]'); if (ad) { view.confirmDel = ad.dataset.askdel; render(); return; }
