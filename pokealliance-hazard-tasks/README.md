@@ -8,23 +8,23 @@ Legenda: ✅ concluída · 🔄 em andamento · ⏳ pendente
 
 Marque conforme for pegando a missão com cada NPC.
 
-- [x] 2. Nerida
-- [ ] 3. Verdra
-- [ ] 4. Rohgar
-- [ ] 5. Draven
-- [ ] 6. Ferris
-- [ ] 7. Talia
-- [ ] 8. Nyxen
-- [ ] 9. Voltrix
-- [ ] 10. Glacis
-- [ ] 11. Hadriel
-- [ ] 12. Lucine
-- [ ] 13. Veska
-- [ ] 14. Calder
-- [ ] 15. Kaela
-- [ ] 16. Orlan
-- [ ] 17. Selene
-- [ ] 18. Maera
+- [x] 2. Nerida — [ver no mapa](https://imgur.com/a/xg5rMPJ)
+- [ ] 3. Verdra — [ver no mapa](https://imgur.com/a/zvLFSgR)
+- [ ] 4. Rohgar — [ver no mapa](https://imgur.com/a/SJ6dfJN)
+- [ ] 5. Draven — [ver no mapa](https://imgur.com/a/UvZJqKw)
+- [ ] 6. Ferris — [ver no mapa](https://imgur.com/a/PKI4Fgs)
+- [ ] 7. Talia — [ver no mapa](https://imgur.com/a/G9d2mFX)
+- [ ] 8. Nyxen — [ver no mapa](https://imgur.com/a/xSn4850)
+- [ ] 9. Voltrix — [ver no mapa](https://imgur.com/a/UanfcaO)
+- [ ] 10. Glacis — [ver no mapa](https://imgur.com/a/0e03YqH)
+- [ ] 11. Hadriel — [ver no mapa](https://imgur.com/a/ocIvomr)
+- [ ] 12. Lucine — [ver no mapa](https://imgur.com/a/aLVehVK)
+- [ ] 13. Veska — [ver no mapa](https://imgur.com/a/IEHYSjh)
+- [ ] 14. Calder — [ver no mapa](https://imgur.com/a/vqSpNqd)
+- [ ] 15. Kaela — [ver no mapa](https://imgur.com/a/tJym2M8)
+- [ ] 16. Orlan — [ver no mapa](https://imgur.com/a/Vb1w5mD)
+- [ ] 17. Selene — [ver no mapa](https://imgur.com/a/IWLKYmI)
+- [ ] 18. Maera — [ver no mapa](https://imgur.com/a/wVfbJ3e)
 
 **Missões pegas: 1 / 17**
 
