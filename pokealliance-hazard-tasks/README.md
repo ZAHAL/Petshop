@@ -6,6 +6,10 @@ Cada NPC dá a sua própria quest. Ordem pensada para um NPC levar ao próximo (
 
 Legenda: ✅ concluída · 🔄 em andamento · ⏳ pendente
 
+Raridade: 💎 Muito raro · 🔶 Raro · 🔷 Médio · ⚪ Comum — os pokes de cada NPC estão do mais raro pro mais comum.
+
+> ⚠️ A raridade é **estimada pelo status base (BST) e estágio de evolução** dos jogos oficiais, não pela taxa de spawn do PokeAlliance (que não achei). Se algum estiver errado no jogo, me avise.
+
 ## Ordem e checklist das missões
 
 | Ordem | NPC | Elemento | Missão pega | Mapa | Progresso |
@@ -37,13 +41,13 @@ Legenda: ✅ concluída · 🔄 em andamento · ⏳ pendente
 - Elemento: 🌊 Água / mar
 - ➡️ Próximo / combina com: Maera (mar fundo: Clamperl ↔ Huntail/Gorebyss/Relicanth)
 
-| Pokémon | Meta | Mortos | Faltam |
-|---|--:|--:|--:|
-| Sh Wailord | 6 | 0 | 6 |
-| Sh Whiscash | 6 | 0 | 6 |
-| Sh Crawdaunt | 6 | 0 | 6 |
-| Sh Luvdisc | 6 | 0 | 6 |
-| Sh Clamperl | 6 | 0 | 6 |
+| Pokémon | Raridade | Meta | Mortos | Faltam |
+|---|---|--:|--:|--:|
+| Sh Wailord | 🔶 Raro | 6 | 0 | 6 |
+| Sh Whiscash | 🔷 Médio | 6 | 0 | 6 |
+| Sh Crawdaunt | 🔷 Médio | 6 | 0 | 6 |
+| Sh Clamperl | ⚪ Comum | 6 | 0 | 6 |
+| Sh Luvdisc | ⚪ Comum | 6 | 0 | 6 |
 
 ## 2º · Maera (NPC #18) ⏳
 
@@ -52,12 +56,12 @@ Legenda: ✅ concluída · 🔄 em andamento · ⏳ pendente
 - Elemento: 🌊 Água / mar fundo
 - ➡️ Próximo / combina com: Glacis (Walrein é água/gelo)
 
-| Pokémon | Meta | Mortos | Faltam |
-|---|--:|--:|--:|
-| Sh Milotic | 8 | 0 | 8 |
-| Sh Huntail | 8 | 0 | 8 |
-| Sh Gorebyss | 7 | 0 | 7 |
-| Sh Relicanth | 7 | 0 | 7 |
+| Pokémon | Raridade | Meta | Mortos | Faltam |
+|---|---|--:|--:|--:|
+| Sh Milotic | 🔶 Raro | 8 | 0 | 8 |
+| Sh Huntail | 🔷 Médio | 8 | 0 | 8 |
+| Sh Gorebyss | 🔷 Médio | 7 | 0 | 7 |
+| Sh Relicanth | 🔷 Médio | 7 | 0 | 7 |
 
 ## 3º · Glacis (NPC #10) ⏳
 
@@ -66,10 +70,10 @@ Legenda: ✅ concluída · 🔄 em andamento · ⏳ pendente
 - Elemento: ❄️ Gelo / água
 - ➡️ Próximo / combina com: Orlan (Pelipper fica no litoral)
 
-| Pokémon | Meta | Mortos | Faltam |
-|---|--:|--:|--:|
-| Sh Glalie | 15 | 0 | 15 |
-| Sh Walrein | 15 | 0 | 15 |
+| Pokémon | Raridade | Meta | Mortos | Faltam |
+|---|---|--:|--:|--:|
+| Sh Walrein | 🔶 Raro | 15 | 0 | 15 |
+| Sh Glalie | 🔷 Médio | 15 | 0 | 15 |
 
 ## 4º · Orlan (NPC #16) ⏳
 
@@ -78,10 +82,10 @@ Legenda: ✅ concluída · 🔄 em andamento · ⏳ pendente
 - Elemento: 🌊 Água + 🐉 Dragão/voador
 - ➡️ Próximo / combina com: Draven (Altaria ↔ Flygon/Salamence)
 
-| Pokémon | Meta | Mortos | Faltam |
-|---|--:|--:|--:|
-| Sh Pelipper | 15 | 0 | 15 |
-| Sh Altaria | 15 | 0 | 15 |
+| Pokémon | Raridade | Meta | Mortos | Faltam |
+|---|---|--:|--:|--:|
+| Sh Altaria | 🔷 Médio | 15 | 0 | 15 |
+| Sh Pelipper | ⚪ Comum | 15 | 0 | 15 |
 
 ## 5º · Draven (NPC #5) ⏳
 
@@ -90,10 +94,10 @@ Legenda: ✅ concluída · 🔄 em andamento · ⏳ pendente
 - Elemento: 🐉 Dragão / deserto
 - ➡️ Próximo / combina com: Talia (Flygon e Cacturne no deserto)
 
-| Pokémon | Meta | Mortos | Faltam |
-|---|--:|--:|--:|
-| Sh Flygon | 15 | 0 | 15 |
-| Sh Salamence | 15 | 0 | 15 |
+| Pokémon | Raridade | Meta | Mortos | Faltam |
+|---|---|--:|--:|--:|
+| Sh Salamence | 💎 Muito raro | 15 | 0 | 15 |
+| Sh Flygon | 🔶 Raro | 15 | 0 | 15 |
 
 ## 6º · Talia (NPC #7) ⏳
 
@@ -102,12 +106,12 @@ Legenda: ✅ concluída · 🔄 em andamento · ⏳ pendente
 - Elemento: 🌿 Grama / floresta / deserto
 - ➡️ Próximo / combina com: Verdra (Roselia na floresta)
 
-| Pokémon | Meta | Mortos | Faltam |
-|---|--:|--:|--:|
-| Sh Breloom | 8 | 0 | 8 |
-| Sh Shiftry | 8 | 0 | 8 |
-| Sh Cacturne | 7 | 0 | 7 |
-| Sh Tropius | 7 | 0 | 7 |
+| Pokémon | Raridade | Meta | Mortos | Faltam |
+|---|---|--:|--:|--:|
+| Sh Shiftry | 🔷 Médio | 8 | 0 | 8 |
+| Sh Cacturne | 🔷 Médio | 7 | 0 | 7 |
+| Sh Breloom | 🔷 Médio | 8 | 0 | 8 |
+| Sh Tropius | 🔷 Médio | 7 | 0 | 7 |
 
 ## 7º · Verdra (NPC #3) ⏳
 
@@ -116,10 +120,10 @@ Legenda: ✅ concluída · 🔄 em andamento · ⏳ pendente
 - Elemento: 🌿 Grama + 🪨 Pedra
 - ➡️ Próximo / combina com: Kaela (Sceptile na floresta)
 
-| Pokémon | Meta | Mortos | Faltam |
-|---|--:|--:|--:|
-| Sh Roselia | 15 | 0 | 15 |
-| Sh Cradily | 15 | 0 | 15 |
+| Pokémon | Raridade | Meta | Mortos | Faltam |
+|---|---|--:|--:|--:|
+| Sh Cradily | 🔷 Médio | 15 | 0 | 15 |
+| Sh Roselia | ⚪ Comum | 15 | 0 | 15 |
 
 ## 8º · Kaela (NPC #15) ⏳
 
@@ -128,11 +132,11 @@ Legenda: ✅ concluída · 🔄 em andamento · ⏳ pendente
 - Elemento: 🌿🔥🌊 Iniciais
 - ➡️ Próximo / combina com: Calder (Blaziken ↔ fogo/vulcão)
 
-| Pokémon | Meta | Mortos | Faltam |
-|---|--:|--:|--:|
-| Sh Sceptile | 10 | 0 | 10 |
-| Sh Blaziken | 10 | 0 | 10 |
-| Sh Swampert | 10 | 0 | 10 |
+| Pokémon | Raridade | Meta | Mortos | Faltam |
+|---|---|--:|--:|--:|
+| Sh Swampert | 🔶 Raro | 10 | 0 | 10 |
+| Sh Sceptile | 🔶 Raro | 10 | 0 | 10 |
+| Sh Blaziken | 🔶 Raro | 10 | 0 | 10 |
 
 ## 9º · Calder (NPC #14) ⏳
 
@@ -141,10 +145,10 @@ Legenda: ✅ concluída · 🔄 em andamento · ⏳ pendente
 - Elemento: 🔥 Fogo / vulcão
 - ➡️ Próximo / combina com: Ferris (caverna/montanha)
 
-| Pokémon | Meta | Mortos | Faltam |
-|---|--:|--:|--:|
-| Sh Camerupt | 15 | 0 | 15 |
-| Sh Torkoal | 15 | 0 | 15 |
+| Pokémon | Raridade | Meta | Mortos | Faltam |
+|---|---|--:|--:|--:|
+| Sh Torkoal | 🔷 Médio | 15 | 0 | 15 |
+| Sh Camerupt | 🔷 Médio | 15 | 0 | 15 |
 
 ## 10º · Ferris (NPC #6) ⏳
 
@@ -153,11 +157,11 @@ Legenda: ✅ concluída · 🔄 em andamento · ⏳ pendente
 - Elemento: ⚙️ Aço / caverna
 - ➡️ Próximo / combina com: Selene (Claydol/Lunatone/Solrock em caverna)
 
-| Pokémon | Meta | Mortos | Faltam |
-|---|--:|--:|--:|
-| Sh Aggron | 10 | 0 | 10 |
-| Sh Mawile | 10 | 0 | 10 |
-| Sh Metagross | 10 | 0 | 10 |
+| Pokémon | Raridade | Meta | Mortos | Faltam |
+|---|---|--:|--:|--:|
+| Sh Metagross | 💎 Muito raro | 10 | 0 | 10 |
+| Sh Aggron | 🔶 Raro | 10 | 0 | 10 |
+| Sh Mawile | ⚪ Comum | 10 | 0 | 10 |
 
 ## 11º · Selene (NPC #17) ⏳
 
@@ -166,14 +170,14 @@ Legenda: ✅ concluída · 🔄 em andamento · ⏳ pendente
 - Elemento: 🔮 Psíquico / pedra
 - ➡️ Próximo / combina com: Hadriel (Medicham é psíquico)
 
-| Pokémon | Meta | Mortos | Faltam |
-|---|--:|--:|--:|
-| Sh Gardevoir | 5 | 0 | 5 |
-| Sh Grumpig | 5 | 0 | 5 |
-| Sh Chimecho | 5 | 0 | 5 |
-| Sh Claydol | 5 | 0 | 5 |
-| Sh Lunatone | 5 | 0 | 5 |
-| Sh Solrock | 5 | 0 | 5 |
+| Pokémon | Raridade | Meta | Mortos | Faltam |
+|---|---|--:|--:|--:|
+| Sh Gardevoir | 🔶 Raro | 5 | 0 | 5 |
+| Sh Claydol | 🔶 Raro | 5 | 0 | 5 |
+| Sh Grumpig | 🔷 Médio | 5 | 0 | 5 |
+| Sh Lunatone | ⚪ Comum | 5 | 0 | 5 |
+| Sh Solrock | ⚪ Comum | 5 | 0 | 5 |
+| Sh Chimecho | ⚪ Comum | 5 | 0 | 5 |
 
 ## 12º · Hadriel (NPC #11) ⏳
 
@@ -182,11 +186,11 @@ Legenda: ✅ concluída · 🔄 em andamento · ⏳ pendente
 - Elemento: 🥊 Lutador / normal
 - ➡️ Próximo / combina com: Lucine (Slaking ↔ normais de rota)
 
-| Pokémon | Meta | Mortos | Faltam |
-|---|--:|--:|--:|
-| Sh Hariyama | 10 | 0 | 10 |
-| Sh Medicham | 10 | 0 | 10 |
-| Sh Slaking | 10 | 0 | 10 |
+| Pokémon | Raridade | Meta | Mortos | Faltam |
+|---|---|--:|--:|--:|
+| Sh Slaking | 💎 Muito raro | 10 | 0 | 10 |
+| Sh Hariyama | 🔷 Médio | 10 | 0 | 10 |
+| Sh Medicham | ⚪ Comum | 10 | 0 | 10 |
 
 ## 13º · Lucine (NPC #12) ⏳
 
@@ -195,12 +199,12 @@ Legenda: ✅ concluída · 🔄 em andamento · ⏳ pendente
 - Elemento: ⚪ Normal / rota
 - ➡️ Próximo / combina com: Rohgar (pokes de campo/rota)
 
-| Pokémon | Meta | Mortos | Faltam |
-|---|--:|--:|--:|
-| Sh Linoone | 8 | 0 | 8 |
-| Sh Delcatty | 8 | 0 | 8 |
-| Sh Swellow | 7 | 0 | 7 |
-| Sh Kecleon | 7 | 0 | 7 |
+| Pokémon | Raridade | Meta | Mortos | Faltam |
+|---|---|--:|--:|--:|
+| Sh Kecleon | ⚪ Comum | 7 | 0 | 7 |
+| Sh Swellow | ⚪ Comum | 7 | 0 | 7 |
+| Sh Linoone | ⚪ Comum | 8 | 0 | 8 |
+| Sh Delcatty | ⚪ Comum | 8 | 0 | 8 |
 
 ## 14º · Rohgar (NPC #4) ⏳
 
@@ -209,13 +213,13 @@ Legenda: ✅ concluída · 🔄 em andamento · ⏳ pendente
 - Elemento: 🌑 Sombrio / campo
 - ➡️ Próximo / combina com: Veska (rota/mato). Obs: Sharpedo é de água, pode sair junto com Nerida/Maera
 
-| Pokémon | Meta | Mortos | Faltam |
-|---|--:|--:|--:|
-| Sh Mightyena | 6 | 0 | 6 |
-| Sh Zangoose | 6 | 0 | 6 |
-| Sh Seviper | 6 | 0 | 6 |
-| Sh Absol | 6 | 0 | 6 |
-| Sh Sharpedo | 6 | 0 | 6 |
+| Pokémon | Raridade | Meta | Mortos | Faltam |
+|---|---|--:|--:|--:|
+| Sh Absol | 🔷 Médio | 6 | 0 | 6 |
+| Sh Sharpedo | 🔷 Médio | 6 | 0 | 6 |
+| Sh Zangoose | 🔷 Médio | 6 | 0 | 6 |
+| Sh Seviper | 🔷 Médio | 6 | 0 | 6 |
+| Sh Mightyena | ⚪ Comum | 6 | 0 | 6 |
 
 ## 15º · Veska (NPC #13) ⏳
 
@@ -224,15 +228,15 @@ Legenda: ✅ concluída · 🔄 em andamento · ⏳ pendente
 - Elemento: 🐛 Inseto
 - ➡️ Próximo / combina com: Nyxen (Shedinja é fantasma)
 
-| Pokémon | Meta | Mortos | Faltam |
-|---|--:|--:|--:|
-| Sh Beautifly | 5 | 0 | 5 |
-| Sh Dustox | 5 | 0 | 5 |
-| Sh Masquerain | 4 | 0 | 4 |
-| Sh Ninjask | 4 | 0 | 4 |
-| Sh Volbeat | 4 | 0 | 4 |
-| Sh Illumise | 4 | 0 | 4 |
-| Sh Shedinja | 4 | 0 | 4 |
+| Pokémon | Raridade | Meta | Mortos | Faltam |
+|---|---|--:|--:|--:|
+| Sh Shedinja | 🔶 Raro | 4 | 0 | 4 |
+| Sh Ninjask | 🔷 Médio | 4 | 0 | 4 |
+| Sh Masquerain | ⚪ Comum | 4 | 0 | 4 |
+| Sh Volbeat | ⚪ Comum | 4 | 0 | 4 |
+| Sh Illumise | ⚪ Comum | 4 | 0 | 4 |
+| Sh Beautifly | ⚪ Comum | 5 | 0 | 5 |
+| Sh Dustox | ⚪ Comum | 5 | 0 | 5 |
 
 ## 16º · Nyxen (NPC #8) ⏳
 
@@ -241,11 +245,11 @@ Legenda: ✅ concluída · 🔄 em andamento · ⏳ pendente
 - Elemento: 👻 Fantasma / caverna escura
 - ➡️ Próximo / combina com: Voltrix (último, sozinho)
 
-| Pokémon | Meta | Mortos | Faltam |
-|---|--:|--:|--:|
-| Sh Sableye | 10 | 0 | 10 |
-| Sh Banette | 10 | 0 | 10 |
-| Sh Dusclops | 10 | 0 | 10 |
+| Pokémon | Raridade | Meta | Mortos | Faltam |
+|---|---|--:|--:|--:|
+| Sh Banette | 🔷 Médio | 10 | 0 | 10 |
+| Sh Dusclops | 🔷 Médio | 10 | 0 | 10 |
+| Sh Sableye | ⚪ Comum | 10 | 0 | 10 |
 
 ## 17º · Voltrix (NPC #9) ⏳
 
@@ -254,6 +258,6 @@ Legenda: ✅ concluída · 🔄 em andamento · ⏳ pendente
 - Elemento: ⚡ Elétrico
 - ➡️ Próximo / combina com: — (fim). Volbeat/Illumise da Veska podem nascer perto
 
-| Pokémon | Meta | Mortos | Faltam |
-|---|--:|--:|--:|
-| Sh Manectric | 30 | 0 | 30 |
+| Pokémon | Raridade | Meta | Mortos | Faltam |
+|---|---|--:|--:|--:|
+| Sh Manectric | 🔷 Médio | 30 | 0 | 30 |
