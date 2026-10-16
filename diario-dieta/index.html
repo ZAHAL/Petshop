@@ -110,6 +110,12 @@ textarea { width: 100%; min-height: 76px; resize: vertical; }
 .offlines .qty button { width: 28px; height: 28px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); padding: 0; }
 .offform input[type=text] { font: inherit; color: var(--fg); background: var(--sunk); border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; flex: 1 1 140px; min-width: 0; }
 .meal-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.meal-top .kc { margin-left: auto; font-family: var(--font-display); font-weight: 700; font-size: .95rem; white-space: nowrap; }
+.meal-top .kc small { font-family: var(--font-body); font-weight: 500; color: var(--muted); font-size: .72rem; }
+.items .ik { font-size: .78rem; color: var(--muted); white-space: nowrap; padding-top: 2px; }
+.opts button .ok { font-weight: 500; opacity: .8; margin-left: 4px; }
+.daykcal { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; font-size: .9rem; padding: 0 2px; }
+.daykcal b { font-family: var(--font-display); font-size: 1.05rem; }
 .tag { font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; padding: 2px 8px; border-radius: 999px; background: var(--sunk); color: var(--muted); white-space: nowrap; }
 .tag.now { background: var(--citrus-soft); color: var(--warn); }
 .tag.ok { background: color-mix(in srgb, var(--ok) 16%, transparent); color: var(--ok); }
@@ -117,7 +123,7 @@ textarea { width: 100%; min-height: 76px; resize: vertical; }
 .opts button { flex: none; border: 1px solid var(--line); background: transparent; border-radius: 999px; padding: 4px 11px; font-size: .82rem; font-weight: 600; color: var(--muted); }
 .opts button[aria-pressed="true"] { background: var(--forest); border-color: var(--forest); color: var(--forest-ink); }
 .items { list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-direction: column; gap: 2px; }
-.items label { display: grid; grid-template-columns: 22px 1fr; gap: 8px; align-items: start; padding: 5px 0; cursor: pointer; }
+.items label { display: grid; grid-template-columns: 22px 1fr auto; gap: 8px; align-items: start; padding: 5px 0; cursor: pointer; }
 .items input { width: 18px; height: 18px; margin: 2px 0 0; accent-color: var(--ok); }
 .items .t { min-width: 0; }
 .items input:checked + .t { color: var(--muted); text-decoration: line-through; text-decoration-color: var(--line); }
@@ -436,11 +442,11 @@ function score(k) {
 /* ===================== Render ===================== */
 const app = document.getElementById('app');
 
-function renderItem(raw, checked, mealId, idx) {
+function renderItem(raw, checked, mealId, idx, kcal) {
   const [id, text] = raw.split('|');
   const html = text.replace(/\{g:(\w+)\}/g, (_, g) => `<button class="grp" data-group="${g}">${GROUPS[g].name.toLowerCase()}</button>`);
   const cid = `i-${mealId}-${idx}`;
-  return `<li><label for="${cid}"><input type="checkbox" id="${cid}" data-meal="${mealId}" data-item="${idx}" ${checked ? 'checked' : ''}><span class="t">${html}</span></label></li>`;
+  return `<li><label for="${cid}"><input type="checkbox" id="${cid}" data-meal="${mealId}" data-item="${idx}" ${checked ? 'checked' : ''}><span class="t">${html}</span>${kcal != null ? `<span class="ik num">${Math.round(kcal)} kcal</span>` : ''}</label></li>`;
 }
 
 function currentMealId(k) {
@@ -479,7 +485,7 @@ function offFormHtml() {
 
 function renderHoje() {
   const k = view.day, d = day(k), date = parseKey(k), isToday = k === todayKey();
-  const sc = score(k), cur = currentMealId(k);
+  const sc = score(k), cur = currentMealId(k), K = dayKcal(k);
   const wd = date.toLocaleDateString('pt-BR', { weekday: 'long' });
   const dm = date.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long' });
   const diff = Math.round((parseKey(k) - parseKey(todayKey())) / 864e5);
@@ -489,15 +495,15 @@ function renderHoje() {
   const retorno = dias >= 0 ? `<div class="retorno"><span>Retorno com a nutri<br><span class="muted">19/11 às 18h30</span></span><span><b class="num">${dias}</b> ${dias === 1 ? 'dia' : 'dias'}</span></div>` : '';
 
   const meals = activeMeals(d).map(m => {
-    const ms = mealState(d, m.id), opt = m.options[ms.opt] || m.options[0];
+    const ms = mealState(d, m.id), opt = m.options[ms.opt] || m.options[0], nu = optNutri(m.id, ms.opt);
     const isNow = cur === m.id;
     const tag = ms.off ? '<span class="tag off">Fora do plano</span>' : ms.done ? '<span class="tag ok">Feito</span>' : isNow ? '<span class="tag now">Agora</span>' : '';
     const opts = m.options.length > 1 ? `<div class="opts" role="group" aria-label="Opções">${m.options.map((_, i) =>
-      `<button data-opt="${i}" data-meal="${m.id}" aria-pressed="${i === ms.opt}">Opção ${i + 1}</button>`).join('')}</div>` : '';
+      `<button data-opt="${i}" data-meal="${m.id}" aria-pressed="${i === ms.opt}">Opção ${i + 1}<span class="ok num">· ${Math.round(optNutri(m.id, i).t.k)}</span></button>`).join('')}</div>` : '';
     if (ms.off) return `<div class="meal off">
       <div><div class="time num">${m.time}</div><div class="dot"></div></div>
       <div class="meal-card">
-        <div class="meal-top"><h3>${m.name}</h3>${tag}</div>
+        <div class="meal-top"><h3>${m.name}</h3>${tag}<span class="kc num">${Math.round(ms.off.kcal)} <small>kcal</small></span></div>
         <div class="offbox"><span>${esc(offText(ms.off))}</span><span class="tot num">≈ ${Math.round(ms.off.kcal)} kcal</span></div>
         <div class="meal-actions"><button class="btn ghost" data-unoff="${m.id}">Desfazer</button></div>
       </div></div>`;
@@ -505,9 +511,9 @@ function renderHoje() {
     return `<div class="meal ${ms.done ? 'done' : ''} ${isNow ? 'now' : ''}">
       <div><div class="time num">${m.time}</div><div class="dot"></div></div>
       <div class="meal-card">
-        <div class="meal-top"><h3>${m.name}</h3>${tag}</div>
+        <div class="meal-top"><h3>${m.name}</h3>${tag}<span class="kc num">≈ ${Math.round(nu.t.k)} <small>kcal</small></span></div>
         ${opts}
-        <ul class="items">${opt.items.map((it, i) => renderItem(it, ms.items[i], m.id, i)).join('')}</ul>
+        <ul class="items">${opt.items.map((it, i) => renderItem(it, ms.items[i], m.id, i, nu.items[i]?.main.k)).join('')}</ul>
         ${opt.obs ? `<div class="obs">${opt.obs}</div>` : ''}
         ${form || `<div class="meal-actions">
           ${ms.done ? `<button class="btn ghost" data-undo="${m.id}">Desfazer</button>`
@@ -536,6 +542,7 @@ function renderHoje() {
       <div class="ring">${ring(sc.pct)}<div class="lbl"><span class="num">${sc.done}/${sc.total}<small>refeições<br>+ suplem.</small></span></div></div>
     </div>
     ${retorno}
+    <div class="daykcal"><span class="muted">Calorias do dia<br><small>estimativa</small></span><span style="text-align:right"><b class="num">${Math.round(K.eaten)}</b> <span class="muted num">/ ≈ ${Math.round(K.forecast)} kcal</span>${Math.round(K.forecast) !== Math.round(K.plan.k) ? `<br><small class="muted num">plano ${Math.round(K.plan.k)} kcal</small>` : ''}</span></div>
     <div class="timeline">${meals}</div>
     <div class="panel"><div class="eyebrow">Suplementos</div><div class="check-list">${supps}</div></div>
     <div class="panel"><div class="eyebrow">Orientações do dia</div><div class="check-list">${habs}</div></div>
