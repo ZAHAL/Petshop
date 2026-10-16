@@ -4,6 +4,30 @@ Progresso das tasks dos NPCs para aumentar o Hazard. Feitas uma por uma, na orde
 
 Legenda: ✅ concluída · 🔄 em andamento · ⏳ pendente
 
+## 1º passo — Pegar as missões
+
+Marque conforme for pegando a missão com cada NPC.
+
+- [x] 2. Nerida
+- [ ] 3. Verdra
+- [ ] 4. Rohgar
+- [ ] 5. Draven
+- [ ] 6. Ferris
+- [ ] 7. Talia
+- [ ] 8. Nyxen
+- [ ] 9. Voltrix
+- [ ] 10. Glacis
+- [ ] 11. Hadriel
+- [ ] 12. Lucine
+- [ ] 13. Veska
+- [ ] 14. Calder
+- [ ] 15. Kaela
+- [ ] 16. Orlan
+- [ ] 17. Selene
+- [ ] 18. Maera
+
+**Missões pegas: 1 / 17**
+
 ## Resumo
 
 | # | NPC | Status | Progresso | Localização |
