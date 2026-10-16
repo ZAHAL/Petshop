@@ -30,7 +30,7 @@ Marque conforme for pegando a missão com cada NPC.
 
 ## Pokes que podem bater no mesmo caminho
 
-> ⚠️ **Não confirmado.** Não achei dados de spawn do PokeAlliance (busca na web não retornou nada) e não consigo abrir as imagens do imgur.
+> ⚠️ **Não confirmado.** Não achei dados de spawn do PokeAlliance (busca na web não retornou nada) e não abri as imagens do imgur.
 > Os grupos abaixo são **suposição por tipo/habitat** — confirme no jogo e me fale onde cada um nasce que eu atualizo com o caminho real.
 > Nenhum Pokémon se repete entre as tasks, então uma kill só conta para um NPC.
 
