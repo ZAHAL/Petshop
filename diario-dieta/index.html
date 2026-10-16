@@ -207,6 +207,22 @@ details.kopt summary .on { font-size: .8rem; font-weight: 600; }
 .kitems .v { white-space: nowrap; text-align: right; }
 .kitems .tot { border-top: 1px dashed var(--line); padding-top: 6px; color: var(--muted); }
 
+details.kday summary { grid-template-columns: 1fr auto; }
+details.kday summary .kname { line-height: 1.6; }
+.wk { display: flex; flex-direction: column; gap: 2px; }
+.wkrow { display: grid; grid-template-columns: 74px 1fr 52px; gap: 10px; align-items: center; border: 0; background: none; padding: 6px 8px; margin: 0 -8px; border-radius: 8px; text-align: left; font-size: .86rem; }
+.wkrow[aria-current="true"] { background: var(--sunk); font-weight: 700; }
+.wkrow .bar { position: relative; height: 10px; border-radius: 999px; background: var(--sunk); }
+.wkrow[aria-current="true"] .bar { background: var(--bg); }
+.wkrow .bar span { display: block; height: 100%; border-radius: 999px; background: var(--forest); }
+.wkrow .bar span.offb { background: var(--citrus); }
+.wkrow .bar i { position: absolute; top: -3px; bottom: -3px; width: 2px; background: var(--fg); opacity: .55; }
+.wkrow b { text-align: right; }
+details.kref > summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+details.kref > summary::-webkit-details-marker { display: none; }
+details.kref > summary::after { content: "▾"; color: var(--muted); }
+details.kref[open] > summary::after { content: "▴"; }
+
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
 </style>
 
@@ -710,66 +726,111 @@ function renderPlano() {
   </div>`;
 }
 
-function renderKcal() {
-  const k = view.day, d = day(k), isToday = k === todayKey();
-  const r0 = n => Math.round(n);
-  const meals = activeMeals(d).map(m => { const ms = mealState(d, m.id); return { m, ms, nu: optNutri(m.id, ms.opt) }; });
-  const plan = { k: 0, p: 0, c: 0, g: 0 }; let eaten = 0;
-  let real = 0, offK = 0;
-  meals.forEach(({ ms, nu }) => { for (const x in plan) plan[x] += nu.t[x]; if (ms.done) eaten += nu.t.k; if (ms.off) { eaten += ms.off.kcal; offK += ms.off.kcal - nu.t.k; } real += ms.off ? ms.off.kcal : nu.t.k; });
-  const hasOff = meals.some(x => x.ms.off);
-  const pk = plan.p * 4, ck = plan.c * 4, gk = plan.g * 9, mk = pk + ck + gk || 1;
+// Calorias de um dia, sem criar registro para dias vazios
+function dayKcal(k) {
+  const d = S.days[k] || { treino: false, meals: {} };
+  const meals = activeMeals(d).map(m => { const ms = (d.meals || {})[m.id] || { opt: 0 }; return { m, ms, nu: optNutri(m.id, ms.opt || 0) }; });
+  const plan = { k: 0, p: 0, c: 0, g: 0 }; let eaten = 0, forecast = 0, marked = 0;
+  meals.forEach(({ ms, nu }) => {
+    for (const x in plan) plan[x] += nu.t[x];
+    if (ms.off) { eaten += ms.off.kcal; forecast += ms.off.kcal; marked++; }
+    else { if (ms.done) { eaten += nu.t.k; marked++; } forecast += nu.t.k; }
+  });
+  return { d, meals, plan, eaten, forecast, marked, hasOff: meals.some(x => x.ms.off), any: marked > 0 };
+}
 
-  // faixa do dia: soma das opções mais leves e mais pesadas
+function renderKcal() {
+  const k = view.day, isToday = k === todayKey(), date = parseKey(k);
+  const r0 = n => Math.round(n);
+  const K = dayKcal(k), { d, meals, plan } = K;
+  const diff = Math.round((date - parseKey(todayKey())) / 864e5);
+  const wd = date.toLocaleDateString('pt-BR', { weekday: 'long' });
+  const rel = diff === 0 ? 'Hoje' : diff === -1 ? 'Ontem' : diff === 1 ? 'Amanhã' : wd[0].toUpperCase() + wd.slice(1);
+  const dm = date.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long' });
+  const pk = plan.p * 4, ck = plan.c * 4, gk = plan.g * 9, mk = pk + ck + gk || 1;
+  const over = K.forecast - plan.k;
+  const pct = Math.min(K.eaten / Math.max(plan.k, K.forecast) * 100, 100);
+
+  const rows = meals.map(({ m, ms, nu }) => {
+    let tag, val, body;
+    if (ms.off) {
+      tag = '<span class="tag off">Fora do plano</span>';
+      val = `<s class="muted">${r0(nu.t.k)}</s> ${r0(ms.off.kcal)}`;
+      body = ms.off.lines.map(l => `<li><span>${l.q > 1 ? l.q + '× ' : ''}${esc(l.n)}</span><span class="v num">${r0(l.k * l.q)} kcal</span></li>`).join('');
+    } else {
+      tag = ms.done ? '<span class="tag ok">Feito</span>' : '<span class="tag">Não marcado</span>';
+      val = ms.done ? r0(nu.t.k) : `<span class="muted">${r0(nu.t.k)}</span>`;
+      body = nu.items.map(({ main, alts }) => `<li><span>${main.n}${alts.map(a => `<span class="alt">ou ${a.n}: ${r0(a.k)} kcal</span>`).join('')}</span><span class="v num">${r0(main.k)} kcal</span></li>`).join('')
+        + `<li class="tot"><span class="num">P ${r0(nu.t.p)}g · C ${r0(nu.t.c)}g · G ${r0(nu.t.g)}g</span><span class="v num">${r0(nu.t.k)} kcal</span></li>`;
+    }
+    const optLbl = !ms.off && m.options.length > 1 ? ` <span class="muted">· opção ${(ms.opt || 0) + 1}</span>` : '';
+    return `<details class="kopt kday"><summary><span class="kname">${m.name}${optLbl}<br>${tag}</span><b class="num">${val} <span class="muted" style="font-weight:500;font-size:.75rem">kcal</span></b></summary><ul class="kitems">${body}</ul></details>`;
+  }).join('');
+
+  // 7 dias terminando no dia selecionado
+  const week = [];
+  for (let i = 6; i >= 0; i--) { const x = new Date(date); x.setDate(date.getDate() - i); const kk = keyOf(x); week.push({ kk, x, K: dayKcal(kk) }); }
+  const wmax = Math.max(...week.map(w => Math.max(w.K.eaten, w.K.plan.k)));
+  const weekRows = week.map(({ kk, x, K: W }) => `<button class="wkrow" data-goday="${kk}" aria-current="${kk === k}">
+      <span class="num">${x.toLocaleDateString('pt-BR', { weekday: 'short' }).replace('.', '')} ${pad(x.getDate())}/${pad(x.getMonth() + 1)}</span>
+      <span class="bar"><span class="${W.hasOff ? 'offb' : ''}" style="width:${W.eaten / wmax * 100}%"></span><i style="left:${W.plan.k / wmax * 100}%"></i></span>
+      <b class="num">${W.any ? r0(W.eaten) : '—'}</b></button>`).join('');
+
+  // referência do plano
   const ext = fn => MEALS.filter(m => !m.trainingOnly).reduce((s, m) => s + fn(NUTRI[m.id].map((_, i) => optNutri(m.id, i).t.k)), 0);
   const lo = ext(a => Math.min(...a)), hi = ext(a => Math.max(...a)), tr = optNutri('treino', 0).t.k;
-  const label = isToday ? 'hoje' : parseKey(k).toLocaleDateString('pt-BR', { day: 'numeric', month: 'long' });
-
   const perMeal = MEALS.map(m => {
-    const opts = NUTRI[m.id].map((_, i) => optNutri(m.id, i));
-    const max = Math.max(...opts.map(o => o.t.k));
-    const chosen = mealState(d, m.id).opt;
-    return `<div class="panel kmeal">
-      <div class="kmeal-head"><h3>${m.name}</h3><span class="muted num" style="font-size:.85rem">${m.time}${m.trainingOnly ? ' · só com treino' : ''}</span></div>
-      ${opts.map((o, i) => `<details class="kopt" data-chosen="${i === chosen}">
-        <summary><span class="on">${opts.length > 1 ? 'Opção ' + (i + 1) : 'Refeição'}</span><span class="bar"><span style="width:${o.t.k / max * 100}%"></span></span><b class="num">${r0(o.t.k)}</b></summary>
+    const opts = NUTRI[m.id].map((_, i) => optNutri(m.id, i)), max = Math.max(...opts.map(o => o.t.k));
+    return `<div class="kmeal"><div class="kmeal-head"><h3>${m.name}</h3><span class="muted num" style="font-size:.85rem">${m.time}${m.trainingOnly ? ' · só com treino' : ''}</span></div>
+      ${opts.map((o, i) => `<details class="kopt"><summary><span class="on">${opts.length > 1 ? 'Opção ' + (i + 1) : 'Refeição'}</span><span class="bar"><span style="width:${o.t.k / max * 100}%"></span></span><b class="num">${r0(o.t.k)}</b></summary>
         <ul class="kitems">${o.items.map(({ main, alts }) => `<li><span>${main.n}${alts.map(a => `<span class="alt">ou ${a.n}: ${r0(a.k)} kcal</span>`).join('')}</span><span class="v num">${r0(main.k)} kcal</span></li>`).join('')}
-          <li class="tot"><span class="num">P ${r0(o.t.p)}g · C ${r0(o.t.c)}g · G ${r0(o.t.g)}g</span><span class="v num">${r0(o.t.k)} kcal</span></li></ul>
-      </details>`).join('')}
-    </div>`;
+          <li class="tot"><span class="num">P ${r0(o.t.p)}g · C ${r0(o.t.c)}g · G ${r0(o.t.g)}g</span><span class="v num">${r0(o.t.k)} kcal</span></li></ul></details>`).join('')}</div>`;
   }).join('');
 
   app.innerHTML = `<div class="stack">
-    <div><div class="eyebrow">Estimativa</div><h1>Calorias</h1></div>
-    <div class="panel stack" style="gap:12px">
-      <div class="eyebrow">Opções escolhidas para ${label}${d.treino ? ' · dia de treino' : ''}</div>
-      <div class="stats">
-        <div class="stat"><span class="eyebrow">Planejado</span><b class="num">${r0(plan.k)}</b><span class="muted" style="font-size:.78rem">kcal</span></div>
-        <div class="stat"><span class="eyebrow">Já comido</span><b class="num">${r0(eaten)}</b><span class="muted" style="font-size:.78rem">kcal</span></div>
-        <div class="stat"><span class="eyebrow">Proteína</span><b class="num">${r0(plan.p)}</b><span class="muted" style="font-size:.78rem">g</span></div>
+    <div>
+      <div class="eyebrow">Calorias · ${diff === 0 || diff === -1 || diff === 1 ? wd + ', ' : ''}${dm}</div>
+      <h1>${rel}</h1>
+      <div class="daynav">
+        <button class="iconbtn" data-nav="-1" aria-label="Dia anterior">‹</button>
+        <button class="iconbtn" data-nav="1" aria-label="Próximo dia">›</button>
+        <input type="date" id="kcalDate" value="${k}" aria-label="Escolher dia">
+        ${isToday ? '' : '<button class="btn ghost" data-nav="0">Hoje</button>'}
       </div>
-      <div class="macrobar" role="img" aria-label="Divisão das calorias por macronutriente">
-        <span class="m-p" style="width:${pk / mk * 100}%"></span><span class="m-c" style="width:${ck / mk * 100}%"></span><span class="m-g" style="width:${gk / mk * 100}%"></span></div>
-      <div class="mlegend num"><span><i class="m-p"></i>Proteína ${r0(pk / mk * 100)}%</span><span><i class="m-c"></i>Carboidrato ${r0(ck / mk * 100)}%</span><span><i class="m-g"></i>Gordura ${r0(gk / mk * 100)}%</span></div>
-      <ul class="kitems" style="margin:0">${meals.map(({ m, ms, nu }) => `<li><span>${m.name}${m.options.length > 1 ? ` <span class="muted">· opção ${ms.opt + 1}</span>` : ''}${ms.done ? ' <span class="tag ok">Feito</span>' : ''}${ms.off ? ' <span class="tag off">Fora do plano</span>' : ''}</span><span class="v num">${ms.off ? `<s class="muted">${r0(nu.t.k)}</s> ${r0(ms.off.kcal)}` : r0(nu.t.k)} kcal</span></li>`).join('')}</ul>
-      ${hasOff ? `<div class="warnbox">Com o que saiu do plano, o dia fica em <b class="num">≈ ${r0(real)} kcal</b> (${offK >= 0 ? '+' : '−'}${r0(Math.abs(offK))} kcal em relação ao planejado).</div>` : ''}
-      <p class="muted" style="margin:0;font-size:.82rem">Troque as opções e o dia de treino na aba Hoje. Abaixo, a barra amarela marca a opção escolhida; toque numa opção para ver os itens.</p>
     </div>
-    <div class="panel stack" style="gap:6px">
-      <div class="eyebrow">Faixa do plano</div>
-      <p style="margin:0">Entre <b class="num">${r0(lo)}</b> e <b class="num">${r0(hi)} kcal</b> por dia, conforme as opções. Em dia de treino, some <b class="num">${r0(tr)} kcal</b> do lanche das 17h.</p>
+    <div class="panel stack" style="gap:12px">
+      <div class="stats">
+        <div class="stat"><span class="eyebrow">Comido</span><b class="num">${r0(K.eaten)}</b><span class="muted" style="font-size:.78rem">kcal</span></div>
+        <div class="stat"><span class="eyebrow">${K.marked === meals.length ? 'Total do dia' : 'Previsto'}</span><b class="num">${r0(K.forecast)}</b><span class="d ${over > 0 ? 'badd' : 'good'} num">${over > 0 ? '+' + r0(over) + ' do plano' : over < 0 ? r0(over) + ' do plano' : 'igual ao plano'}</span></div>
+        <div class="stat"><span class="eyebrow">Plano</span><b class="num">${r0(plan.k)}</b><span class="muted" style="font-size:.78rem">kcal${d.treino ? ' · treino' : ''}</span></div>
+      </div>
+      <div class="macrobar" role="img" aria-label="Comido em relação ao total do dia"><span class="${K.hasOff ? 'm-c' : 'm-p'}" style="width:${pct}%"></span></div>
+      <p class="muted" style="margin:0;font-size:.82rem">${K.any ? `${K.marked} de ${meals.length} refeições marcadas.` : 'Nenhuma refeição marcada neste dia.'}${K.marked < meals.length ? ' “Previsto” soma o que você comeu com as refeições do plano que ainda não foram marcadas.' : ''}</p>
     </div>
-    ${perMeal}
-    <div class="panel stack" style="gap:6px">
-      <div class="eyebrow">Como estes números foram calculados</div>
-      <ul class="plain" style="font-size:.86rem">
-        <li>A nutri não informou calorias no plano. Os valores são estimativas da Tabela TACO e de rótulos comuns.</li>
-        <li>O total usa a primeira alternativa de cada item (ex.: pão francês, frango). As outras aparecem ao abrir cada opção.</li>
-        <li>“1 porção de fruta” e “1 porção de gorduras boas” usam a média do grupo.</li>
-        <li>Azeite, óleo de preparo e molho na salada não entram na conta: 1 colher de sopa de azeite soma cerca de 88 kcal.</li>
-        <li>Café sem açúcar. Para a meta exata, pergunte à nutri no retorno.</li>
-      </ul>
+    <div class="panel">
+      <div class="eyebrow" style="margin-bottom:4px">Refeições do dia</div>
+      ${rows}
+      <p class="muted" style="margin:8px 0 0;font-size:.82rem">Marque refeições e troque opções na aba Hoje.</p>
     </div>
+    <div class="panel stack" style="gap:10px">
+      <div class="row" style="justify-content:space-between"><div class="eyebrow">7 dias até ${pad(date.getDate())}/${pad(date.getMonth() + 1)}</div>
+        <span class="legend"><i style="background:var(--forest)"></i>comido <i style="background:var(--citrus);margin-left:6px"></i>com saída do plano <i style="background:var(--fg);width:2px;margin-left:6px"></i>plano</span></div>
+      <div class="wk">${weekRows}</div>
+    </div>
+    <details class="panel kref">
+      <summary><span><b>Calorias de cada opção do plano</b><br><span class="muted" style="font-size:.85rem">Entre ${r0(lo)} e ${r0(hi)} kcal por dia; treino soma ${r0(tr)} kcal</span></span></summary>
+      <div class="stack" style="margin-top:12px">
+        <div class="macrobar" role="img" aria-label="Divisão do plano do dia por macronutriente">
+          <span class="m-p" style="width:${pk / mk * 100}%"></span><span class="m-c" style="width:${ck / mk * 100}%"></span><span class="m-g" style="width:${gk / mk * 100}%"></span></div>
+        <div class="mlegend num"><span><i class="m-p"></i>Proteína ${r0(pk / mk * 100)}% (${r0(plan.p)}g)</span><span><i class="m-c"></i>Carboidrato ${r0(ck / mk * 100)}%</span><span><i class="m-g"></i>Gordura ${r0(gk / mk * 100)}%</span></div>
+        ${perMeal}
+        <ul class="plain muted" style="font-size:.84rem">
+          <li>A nutri não informou calorias no plano. Os valores são estimativas da Tabela TACO e de rótulos comuns.</li>
+          <li>Cada item conta a primeira alternativa (ex.: pão francês, frango). Fruta e gorduras boas usam a média do grupo.</li>
+          <li>Azeite e óleo de preparo não entram na conta: 1 colher de sopa de azeite soma cerca de 88 kcal. Café sem açúcar.</li>
+        </ul>
+      </div>
+    </details>
   </div>`;
 }
 
@@ -858,6 +919,7 @@ app.addEventListener('click', e => {
   }
   const uo = t.closest('[data-unoff]'); if (uo) { delete mealState(day(view.day), uo.dataset.unoff).off; save(); render(); return; }
   const un = t.closest('[data-undo]'); if (un) { mealState(day(view.day), un.dataset.undo).done = false; save(); render(); return; }
+  const gd = t.closest('[data-goday]'); if (gd) { view.day = gd.dataset.goday; render(); return; }
   const ch = t.closest('[data-chip]'); if (ch) { view.group = ch.dataset.chip; render(); return; }
   const ad = t.closest('[data-askdel]'); if (ad) { view.confirmDel = ad.dataset.askdel; render(); return; }
   const dw = t.closest('[data-delw]'); if (dw) { S.pesos = S.pesos.filter(p => p.date !== dw.dataset.delw); view.confirmDel = null; save(); render(); toast('Pesagem removida'); return; }
@@ -884,6 +946,7 @@ app.addEventListener('change', e => {
     save(); return;
   }
   if (t.dataset.supl) { d.supl[t.dataset.supl] = t.checked; save(); render(); return; }
+  if (t.id === 'kcalDate') { if (t.value) { view.day = t.value; render(); } return; }
   if (t.dataset.hab) { d.hab[t.dataset.hab] = t.checked; save(); return; }
 });
 
