@@ -8,25 +8,48 @@ Legenda: ✅ concluída · 🔄 em andamento · ⏳ pendente
 
 Marque conforme for pegando a missão com cada NPC.
 
-- [x] 2. Nerida — [ver no mapa](https://imgur.com/a/xg5rMPJ)
-- [ ] 3. Verdra — [ver no mapa](https://imgur.com/a/zvLFSgR)
-- [ ] 4. Rohgar — [ver no mapa](https://imgur.com/a/SJ6dfJN)
-- [ ] 5. Draven — [ver no mapa](https://imgur.com/a/UvZJqKw)
-- [ ] 6. Ferris — [ver no mapa](https://imgur.com/a/PKI4Fgs)
-- [ ] 7. Talia — [ver no mapa](https://imgur.com/a/G9d2mFX)
-- [ ] 8. Nyxen — [ver no mapa](https://imgur.com/a/xSn4850)
-- [ ] 9. Voltrix — [ver no mapa](https://imgur.com/a/UanfcaO)
-- [ ] 10. Glacis — [ver no mapa](https://imgur.com/a/0e03YqH)
-- [ ] 11. Hadriel — [ver no mapa](https://imgur.com/a/ocIvomr)
-- [ ] 12. Lucine — [ver no mapa](https://imgur.com/a/aLVehVK)
-- [ ] 13. Veska — [ver no mapa](https://imgur.com/a/IEHYSjh)
-- [ ] 14. Calder — [ver no mapa](https://imgur.com/a/vqSpNqd)
-- [ ] 15. Kaela — [ver no mapa](https://imgur.com/a/tJym2M8)
-- [ ] 16. Orlan — [ver no mapa](https://imgur.com/a/Vb1w5mD)
-- [ ] 17. Selene — [ver no mapa](https://imgur.com/a/IWLKYmI)
-- [ ] 18. Maera — [ver no mapa](https://imgur.com/a/wVfbJ3e)
+- [x] 2. Nerida — [ver no mapa](https://imgur.com/a/xg5rMPJ) — 6 Wailord, 6 Whiscash, 6 Crawdaunt, 6 Luvdisc, 6 Clamperl
+- [ ] 3. Verdra — [ver no mapa](https://imgur.com/a/zvLFSgR) — 15 Roselia, 15 Cradily
+- [ ] 4. Rohgar — [ver no mapa](https://imgur.com/a/SJ6dfJN) — 6 Mightyena, 6 Zangoose, 6 Seviper, 6 Absol, 6 Sharpedo
+- [ ] 5. Draven — [ver no mapa](https://imgur.com/a/UvZJqKw) — 15 Flygon, 15 Salamence
+- [ ] 6. Ferris — [ver no mapa](https://imgur.com/a/PKI4Fgs) — 10 Aggron, 10 Mawile, 10 Metagross
+- [ ] 7. Talia — [ver no mapa](https://imgur.com/a/G9d2mFX) — 8 Breloom, 8 Shiftry, 7 Cacturne, 7 Tropius
+- [ ] 8. Nyxen — [ver no mapa](https://imgur.com/a/xSn4850) — 10 Sableye, 10 Banette, 10 Dusclops
+- [ ] 9. Voltrix — [ver no mapa](https://imgur.com/a/UanfcaO) — 30 Manectric
+- [ ] 10. Glacis — [ver no mapa](https://imgur.com/a/0e03YqH) — 15 Glalie, 15 Walrein
+- [ ] 11. Hadriel — [ver no mapa](https://imgur.com/a/ocIvomr) — 10 Hariyama, 10 Medicham, 10 Slaking
+- [ ] 12. Lucine — [ver no mapa](https://imgur.com/a/aLVehVK) — 8 Linoone, 8 Delcatty, 7 Swellow, 7 Kecleon
+- [ ] 13. Veska — [ver no mapa](https://imgur.com/a/IEHYSjh) — 5 Beautifly, 5 Dustox, 4 Masquerain, 4 Ninjask, 4 Volbeat, 4 Illumise, 4 Shedinja
+- [ ] 14. Calder — [ver no mapa](https://imgur.com/a/vqSpNqd) — 15 Camerupt, 15 Torkoal
+- [ ] 15. Kaela — [ver no mapa](https://imgur.com/a/tJym2M8) — 10 Sceptile, 10 Blaziken, 10 Swampert
+- [ ] 16. Orlan — [ver no mapa](https://imgur.com/a/Vb1w5mD) — 15 Pelipper, 15 Altaria
+- [ ] 17. Selene — [ver no mapa](https://imgur.com/a/IWLKYmI) — 5 Gardevoir, 5 Grumpig, 5 Chimecho, 5 Claydol, 5 Lunatone, 5 Solrock
+- [ ] 18. Maera — [ver no mapa](https://imgur.com/a/wVfbJ3e) — 8 Milotic, 8 Huntail, 7 Gorebyss, 7 Relicanth
 
 **Missões pegas: 1 / 17**
+
+## Pokes que podem bater no mesmo caminho
+
+> ⚠️ **Não confirmado.** Não achei dados de spawn do PokeAlliance (busca na web não retornou nada) e não consigo abrir as imagens do imgur.
+> Os grupos abaixo são **suposição por tipo/habitat** — confirme no jogo e me fale onde cada um nasce que eu atualizo com o caminho real.
+> Nenhum Pokémon se repete entre as tasks, então uma kill só conta para um NPC.
+
+| Grupo (provável) | Pokes | NPCs envolvidos |
+|---|---|---|
+| Água / mar | Wailord, Whiscash, Crawdaunt, Luvdisc, Clamperl, Sharpedo, Milotic, Huntail, Gorebyss, Relicanth, Pelipper, Swampert | Nerida, Rohgar, Maera, Orlan, Kaela |
+| Mar fundo (mergulho) | Clamperl, Huntail, Gorebyss, Relicanth | Nerida, Maera |
+| Gelo | Glalie, Walrein | Glacis |
+| Fogo / vulcão | Camerupt, Torkoal, Blaziken | Calder, Kaela |
+| Dragão / deserto | Flygon, Salamence, Altaria, Cacturne | Draven, Orlan, Talia |
+| Floresta / grama | Breloom, Shiftry, Tropius, Roselia, Sceptile | Talia, Verdra, Kaela |
+| Insetos | Beautifly, Dustox, Masquerain, Ninjask, Volbeat, Illumise, Shedinja | Veska |
+| Fantasma / caverna escura | Sableye, Banette, Dusclops, Shedinja | Nyxen, Veska |
+| Caverna / pedra / aço | Aggron, Mawile, Metagross, Cradily, Claydol, Lunatone, Solrock | Ferris, Verdra, Selene |
+| Psíquico | Gardevoir, Grumpig, Chimecho, Medicham, Claydol | Selene, Hadriel |
+| Rota / campo (normal) | Linoone, Delcatty, Swellow, Kecleon, Slaking, Zangoose, Seviper, Mightyena, Absol | Lucine, Hadriel, Rohgar |
+| Elétrico | Manectric, Volbeat, Illumise | Voltrix, Veska |
+
+**Dica:** se pegar ao mesmo tempo as missões de NPCs do mesmo grupo (ex.: Nerida + Maera + Orlan), dá para fazer tudo numa ida só.
 
 ## Resumo
 
