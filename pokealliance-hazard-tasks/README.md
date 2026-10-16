@@ -8,7 +8,7 @@ Legenda: ✅ concluída · 🔄 em andamento · ⏳ pendente
 
 Raridade: 💎 Muito raro · 🔶 Raro · 🔷 Médio · ⚪ Comum — os pokes de cada NPC estão do mais raro pro mais comum.
 
-> ⚠️ A raridade é **estimada pelo status base (BST) e estágio de evolução** dos jogos oficiais, não pela taxa de spawn do PokeAlliance (que não achei). Se algum estiver errado no jogo, me avise.
+> ⚠️ A raridade é **estimada pelo status base (BST) dos jogos oficiais**, não pela taxa de spawn do PokeAlliance (que não achei). Se algum estiver errado no jogo, me avise.
 
 ## Ordem e checklist das missões
 
