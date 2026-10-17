@@ -23,7 +23,7 @@ Primeiro os NPCs que dá pra fazer **sozinho** (só T2, T1 e Super raro). Por ú
 |---|---|---|---|---|---|---|---|
 | 1º | Talia (#7) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/G9d2mFX) | 8 Breloom, 8 Shiftry, 7 Cacturne, 7 Tropius ✅ | 🟢 nenhuma | 7 / 30 |
 | 2º | Nerida (#2) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/xg5rMPJ) | 6 Luvdisc ✅, 6 Clamperl ✅, 6 Wailord, 6 Whiscash, 6 Crawdaunt ✅ | 🟢 nenhuma | 18 / 30 |
-| 3º | Maera (#18) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/wVfbJ3e) | 8 Huntail, 7 Gorebyss ✅, 7 Relicanth, 8 Milotic ✅ | 🟢 nenhuma | 15 / 30 |
+| 3º | Maera (#18) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/wVfbJ3e) | 8 Huntail ✅, 7 Gorebyss ✅, 7 Relicanth, 8 Milotic ✅ | 🟢 nenhuma | 23 / 30 |
 | 4º | Orlan (#16) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/Vb1w5mD) | 15 Pelipper, 15 Altaria | 🟢 nenhuma | 0 / 30 |
 | 5º | Verdra (#3) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/zvLFSgR) | 15 Roselia, 15 Cradily | 🟢 nenhuma | 0 / 30 |
 | 6º | Lucine (#12) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/aLVehVK) | 8 Linoone, 8 Delcatty, 7 Kecleon, 7 Swellow | 🟢 nenhuma | 0 / 30 |
@@ -49,7 +49,7 @@ Primeiro os NPCs que dá pra fazer **sozinho** (só T2, T1 e Super raro). Por ú
 |---|---|---|---|
 | Voltrix (#9) | [ver no mapa](https://imgur.com/a/UanfcaO) | 30 Manectric ✅ | 🎁 falta pegar |
 
-**Missões pegas: 5 / 17** · **Total: 82 / 510 shinies**
+**Missões pegas: 5 / 17** · **Total: 90 / 510 shinies**
 
 ## 🔴 Hunts de level alto (todas as NPCs)
 
@@ -109,12 +109,12 @@ Para juntar e fazer quando tiver time/level.
 - [x] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/wVfbJ3e)
 - Elemento: 🌊 Água / mar fundo
-- Pokes: 8 Huntail, 7 Gorebyss ✅, 7 Relicanth, 8 Milotic ✅
+- Pokes: 8 Huntail ✅, 7 Gorebyss ✅, 7 Relicanth, 8 Milotic ✅
 - ➡️ Próximo: Orlan
 
 | Pokémon | Raridade | Como | Meta | Mortos | Faltam |
 |---|---|---|--:|--:|--:|
-| Sh Huntail | 🟢 T1 | 🟢 Sozinho (respawn) | 8 | 0 | 8 |
+| Sh Huntail | 🟢 T1 | 🟢 Sozinho (respawn) | 8 | 8 | ✅ 0 |
 | Sh Gorebyss | 🟢 T1 | 🟢 Sozinho (respawn) | 7 | 7 | ✅ 0 |
 | Sh Relicanth | 🟢 T1 | 🟢 Sozinho (respawn) | 7 | 0 | 7 |
 | Sh Milotic | 🟣 Ultra raro | 🔴 Hunt lv alto | 8 | 8 | ✅ 0 |
