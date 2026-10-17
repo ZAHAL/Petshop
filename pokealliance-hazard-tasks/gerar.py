@@ -13,7 +13,7 @@ N=[
 (17,"Selene","IWLKYmI","🔮 Psíquico / pedra",False,[("Gardevoir",5),("Grumpig",5),("Chimecho",5),("Claydol",5),("Lunatone",5),("Solrock",5)],"Hadriel (Medicham é psíquico)"),
 (11,"Hadriel","ocIvomr","🥊 Lutador / normal",False,[("Hariyama",10),("Medicham",10),("Slaking",10)],"Lucine (Slaking ↔ normais de rota)"),
 (12,"Lucine","aLVehVK","⚪ Normal / rota",False,[("Linoone",8),("Delcatty",8),("Swellow",7),("Kecleon",7)],"Rohgar (pokes de campo/rota)"),
-(4,"Rohgar","SJ6dfJN","🌑 Sombrio / campo",False,[("Mightyena",6),("Zangoose",6),("Seviper",6),("Absol",6),("Sharpedo",6)],"Veska (rota/mato). Obs: Sharpedo é de água, pode sair junto com Nerida/Maera"),
+(4,"Rohgar","SJ6dfJN","🌑 Sombrio / campo",True,[("Mightyena",6),("Zangoose",6),("Seviper",6),("Absol",6),("Sharpedo",6)],"Veska (rota/mato). Obs: Sharpedo é de água, pode sair junto com Nerida/Maera"),
 (13,"Veska","IEHYSjh","🐛 Inseto",False,[("Beautifly",5),("Dustox",5),("Masquerain",4),("Ninjask",4),("Volbeat",4),("Illumise",4),("Shedinja",4)],"Nyxen (Shedinja é fantasma)"),
 (8,"Nyxen","xSn4850","👻 Fantasma / caverna escura",False,[("Sableye",10),("Banette",10),("Dusclops",10)],"Voltrix (último, sozinho)"),
 (9,"Voltrix","UanfcaO","⚡ Elétrico",True,[("Manectric",30)],"— (fim). Volbeat/Illumise da Veska podem nascer perto"),
@@ -30,7 +30,7 @@ ORDEM=["T2","T1","Super raro","Ultra raro","Lendário","Mítico"]  # mais fácil
 ICON={"T2":"⚪","T1":"🟢","Super raro":"🔵","Ultra raro":"🟣","Lendário":"🟠","Mítico":"🔴"}
 TIER={p:t for t,ps in TIERS.items() for p in ps.split()}
 SOLO={"T2","T1","Super raro"}
-MORTOS={"Tropius":7,"Manectric":30,"Milotic":8}
+MORTOS={"Tropius":7,"Manectric":30,"Milotic":8,"Mightyena":6,"Absol":6}
 todos=[p for n in N for p,_ in n[5]]
 assert set(todos)==set(TIER), set(todos)^set(TIER)
 def rank(p): return ORDEM.index(TIER[p])
