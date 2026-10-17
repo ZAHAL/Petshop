@@ -19,30 +19,33 @@ Primeiro os NPCs que dá pra fazer **sozinho** (só T2, T1 e Super raro). Por ú
 
 ### 🟢 Sozinho no respawn
 
-| Ordem | NPC | Status | Missão pega | Mapa | Pede para matar | Hunt difícil | Progresso |
+| Ordem | NPC | Status | Missão pega | Mapa | Falta matar | Hunt difícil | Progresso |
 |---|---|---|---|---|---|---|---|
-| 1º | Talia (#7) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/G9d2mFX) | 8 Breloom, 8 Shiftry, 7 Cacturne, 7 Tropius ✅ | 🟢 nenhuma | 7 / 30 |
+| 1º | Talia (#7) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/G9d2mFX) | 8 Breloom, 8 Shiftry, 7 Cacturne | 🟢 nenhuma | 7 / 30 |
 | 2º | Nerida (#2) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/xg5rMPJ) | 6 Luvdisc, 6 Clamperl, 6 Wailord, 6 Whiscash, 6 Crawdaunt | 🟢 nenhuma | 0 / 30 |
-| 3º | Maera (#18) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/wVfbJ3e) | 8 Huntail, 7 Gorebyss, 7 Relicanth, 8 Milotic ✅ | 🟢 nenhuma | 8 / 30 |
+| 3º | Maera (#18) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/wVfbJ3e) | 8 Huntail, 7 Gorebyss, 7 Relicanth | 🟢 nenhuma | 8 / 30 |
 | 4º | Orlan (#16) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/Vb1w5mD) | 15 Pelipper, 15 Altaria | 🟢 nenhuma | 0 / 30 |
 | 5º | Verdra (#3) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/zvLFSgR) | 15 Roselia, 15 Cradily | 🟢 nenhuma | 0 / 30 |
 | 6º | Lucine (#12) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/aLVehVK) | 8 Linoone, 8 Delcatty, 7 Kecleon, 7 Swellow | 🟢 nenhuma | 0 / 30 |
 | 7º | Veska (#13) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/IEHYSjh) | 4 Volbeat, 4 Illumise, 5 Beautifly, 5 Dustox, 4 Masquerain, 4 Ninjask, 4 Shedinja | 🟢 nenhuma | 0 / 30 |
 | 8º | Nyxen (#8) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/xSn4850) | 10 Sableye, 10 Banette, 10 Dusclops | 🟢 nenhuma | 0 / 30 |
-| 9º | Voltrix (#9) | ✅ | ☑️ | [ver no mapa](https://imgur.com/a/UanfcaO) | 30 Manectric ✅ | 🟢 nenhuma | 30 / 30 |
 
 ### 🔴 Têm hunt de level alto (deixar por último)
 
-| Ordem | NPC | Status | Missão pega | Mapa | Pede para matar | Hunt difícil | Progresso |
+| Ordem | NPC | Status | Missão pega | Mapa | Falta matar | Hunt difícil | Progresso |
 |---|---|---|---|---|---|---|---|
-| 10º | Selene (#17) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/IWLKYmI) | 5 Grumpig, 5 Chimecho, 5 Claydol, 5 Lunatone, 5 Solrock, 5 Gardevoir | 🔴 Gardevoir (Ultra raro) | 0 / 30 |
-| 11º | Ferris (#6) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/PKI4Fgs) | 10 Mawile, 10 Aggron, 10 Metagross | 🔴 Metagross (Ultra raro) | 0 / 30 |
-| 12º | Glacis (#10) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/0e03YqH) | 15 Walrein, 15 Glalie | 🔴 Glalie (Ultra raro) | 0 / 30 |
-| 13º | Calder (#14) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/vqSpNqd) | 15 Camerupt, 15 Torkoal | 🔴 Torkoal (Ultra raro) | 0 / 30 |
-| 14º | Kaela (#15) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/tJym2M8) | 10 Sceptile, 10 Blaziken, 10 Swampert | 🔴 Sceptile (Ultra raro), Blaziken (Ultra raro), Swampert (Ultra raro) | 0 / 30 |
-| 15º | Rohgar (#4) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/SJ6dfJN) | 6 Zangoose, 6 Seviper, 6 Sharpedo, 6 Mightyena, 6 Absol | 🔴 Mightyena (Ultra raro), Absol (Lendário) | 0 / 30 |
-| 16º | Draven (#5) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/UvZJqKw) | 15 Salamence, 15 Flygon | 🔴 Flygon (Lendário), Salamence (Ultra raro) | 0 / 30 |
-| 17º | Hadriel (#11) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/ocIvomr) | 10 Hariyama, 10 Medicham, 10 Slaking | 🔴 Slaking (Mítico) | 0 / 30 |
+| 9º | Selene (#17) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/IWLKYmI) | 5 Grumpig, 5 Chimecho, 5 Claydol, 5 Lunatone, 5 Solrock, 5 Gardevoir | 🔴 Gardevoir (Ultra raro) | 0 / 30 |
+| 10º | Ferris (#6) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/PKI4Fgs) | 10 Mawile, 10 Aggron, 10 Metagross | 🔴 Metagross (Ultra raro) | 0 / 30 |
+| 11º | Glacis (#10) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/0e03YqH) | 15 Walrein, 15 Glalie | 🔴 Glalie (Ultra raro) | 0 / 30 |
+| 12º | Calder (#14) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/vqSpNqd) | 15 Camerupt, 15 Torkoal | 🔴 Torkoal (Ultra raro) | 0 / 30 |
+| 13º | Kaela (#15) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/tJym2M8) | 10 Sceptile, 10 Blaziken, 10 Swampert | 🔴 Sceptile (Ultra raro), Blaziken (Ultra raro), Swampert (Ultra raro) | 0 / 30 |
+| 14º | Rohgar (#4) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/SJ6dfJN) | 6 Zangoose, 6 Seviper, 6 Sharpedo, 6 Mightyena, 6 Absol | 🔴 Mightyena (Ultra raro), Absol (Lendário) | 0 / 30 |
+| 15º | Draven (#5) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/UvZJqKw) | 15 Salamence, 15 Flygon | 🔴 Flygon (Lendário), Salamence (Ultra raro) | 0 / 30 |
+| 16º | Hadriel (#11) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/ocIvomr) | 10 Hariyama, 10 Medicham, 10 Slaking | 🔴 Slaking (Mítico) | 0 / 30 |
+
+### ✅ Concluídas
+
+- Voltrix (#9) — 30 Manectric
 
 **Missões pegas: 4 / 17** · **Total: 45 / 510 shinies**
 
@@ -55,9 +58,6 @@ Para juntar e fazer quando tiver time/level.
 | Sh Slaking | 🔴 Mítico | Hadriel | 10 |
 | Sh Absol | 🟠 Lendário | Rohgar | 6 |
 | Sh Flygon | 🟠 Lendário | Draven | 15 |
-| Sh Tropius | 🟣 Ultra raro | Talia | ✅ 0 |
-| Sh Milotic | 🟣 Ultra raro | Maera | ✅ 0 |
-| Sh Manectric | 🟣 Ultra raro | Voltrix | ✅ 0 |
 | Sh Gardevoir | 🟣 Ultra raro | Selene | 5 |
 | Sh Metagross | 🟣 Ultra raro | Ferris | 10 |
 | Sh Glalie | 🟣 Ultra raro | Glacis | 15 |
@@ -73,7 +73,7 @@ Para juntar e fazer quando tiver time/level.
 - [x] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/G9d2mFX)
 - Elemento: 🌿 Grama / floresta / deserto
-- Pede para matar: 8 Breloom, 8 Shiftry, 7 Cacturne, 7 Tropius ✅
+- Falta matar: 8 Breloom, 8 Shiftry, 7 Cacturne
 - ➡️ Próximo: Nerida
 
 | Pokémon | Raridade | Como | Meta | Mortos | Faltam |
@@ -81,14 +81,13 @@ Para juntar e fazer quando tiver time/level.
 | Sh Breloom | 🟢 T1 | 🟢 Sozinho (respawn) | 8 | 0 | 8 |
 | Sh Shiftry | 🟢 T1 | 🟢 Sozinho (respawn) | 8 | 0 | 8 |
 | Sh Cacturne | 🟢 T1 | 🟢 Sozinho (respawn) | 7 | 0 | 7 |
-| Sh Tropius | 🟣 Ultra raro | 🔴 Hunt lv alto | 7 | 7 | ✅ 0 |
 
 ## 2º · Nerida (NPC #2) 🔄
 
 - [x] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/xg5rMPJ)
 - Elemento: 🌊 Água / mar
-- Pede para matar: 6 Luvdisc, 6 Clamperl, 6 Wailord, 6 Whiscash, 6 Crawdaunt
+- Falta matar: 6 Luvdisc, 6 Clamperl, 6 Wailord, 6 Whiscash, 6 Crawdaunt
 - ➡️ Próximo: Maera
 
 | Pokémon | Raridade | Como | Meta | Mortos | Faltam |
@@ -104,7 +103,7 @@ Para juntar e fazer quando tiver time/level.
 - [x] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/wVfbJ3e)
 - Elemento: 🌊 Água / mar fundo
-- Pede para matar: 8 Huntail, 7 Gorebyss, 7 Relicanth, 8 Milotic ✅
+- Falta matar: 8 Huntail, 7 Gorebyss, 7 Relicanth
 - ➡️ Próximo: Orlan
 
 | Pokémon | Raridade | Como | Meta | Mortos | Faltam |
@@ -112,14 +111,13 @@ Para juntar e fazer quando tiver time/level.
 | Sh Huntail | 🟢 T1 | 🟢 Sozinho (respawn) | 8 | 0 | 8 |
 | Sh Gorebyss | 🟢 T1 | 🟢 Sozinho (respawn) | 7 | 0 | 7 |
 | Sh Relicanth | 🟢 T1 | 🟢 Sozinho (respawn) | 7 | 0 | 7 |
-| Sh Milotic | 🟣 Ultra raro | 🔴 Hunt lv alto | 8 | 8 | ✅ 0 |
 
 ## 4º · Orlan (NPC #16) ⏳
 
 - [ ] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/Vb1w5mD)
 - Elemento: 🌊 Água + 🐉 Dragão/voador
-- Pede para matar: 15 Pelipper, 15 Altaria
+- Falta matar: 15 Pelipper, 15 Altaria
 - ➡️ Próximo: Verdra
 
 | Pokémon | Raridade | Como | Meta | Mortos | Faltam |
@@ -132,7 +130,7 @@ Para juntar e fazer quando tiver time/level.
 - [ ] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/zvLFSgR)
 - Elemento: 🌿 Grama + 🪨 Pedra
-- Pede para matar: 15 Roselia, 15 Cradily
+- Falta matar: 15 Roselia, 15 Cradily
 - ➡️ Próximo: Lucine
 
 | Pokémon | Raridade | Como | Meta | Mortos | Faltam |
@@ -145,7 +143,7 @@ Para juntar e fazer quando tiver time/level.
 - [ ] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/aLVehVK)
 - Elemento: ⚪ Normal / rota
-- Pede para matar: 8 Linoone, 8 Delcatty, 7 Kecleon, 7 Swellow
+- Falta matar: 8 Linoone, 8 Delcatty, 7 Kecleon, 7 Swellow
 - ➡️ Próximo: Veska
 
 | Pokémon | Raridade | Como | Meta | Mortos | Faltam |
@@ -160,7 +158,7 @@ Para juntar e fazer quando tiver time/level.
 - [ ] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/IEHYSjh)
 - Elemento: 🐛 Inseto
-- Pede para matar: 4 Volbeat, 4 Illumise, 5 Beautifly, 5 Dustox, 4 Masquerain, 4 Ninjask, 4 Shedinja
+- Falta matar: 4 Volbeat, 4 Illumise, 5 Beautifly, 5 Dustox, 4 Masquerain, 4 Ninjask, 4 Shedinja
 - ➡️ Próximo: Nyxen
 
 | Pokémon | Raridade | Como | Meta | Mortos | Faltam |
@@ -178,8 +176,8 @@ Para juntar e fazer quando tiver time/level.
 - [ ] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/xSn4850)
 - Elemento: 👻 Fantasma / caverna escura
-- Pede para matar: 10 Sableye, 10 Banette, 10 Dusclops
-- ➡️ Próximo: Voltrix
+- Falta matar: 10 Sableye, 10 Banette, 10 Dusclops
+- ➡️ Próximo: Selene
 
 | Pokémon | Raridade | Como | Meta | Mortos | Faltam |
 |---|---|---|--:|--:|--:|
@@ -187,24 +185,12 @@ Para juntar e fazer quando tiver time/level.
 | Sh Banette | 🟢 T1 | 🟢 Sozinho (respawn) | 10 | 0 | 10 |
 | Sh Dusclops | 🟢 T1 | 🟢 Sozinho (respawn) | 10 | 0 | 10 |
 
-## 9º · Voltrix (NPC #9) ✅
-
-- [x] Missão pega
-- 📍 Mapa: [ver no mapa](https://imgur.com/a/UanfcaO)
-- Elemento: ⚡ Elétrico
-- Pede para matar: 30 Manectric ✅
-- ➡️ Próximo: Selene
-
-| Pokémon | Raridade | Como | Meta | Mortos | Faltam |
-|---|---|---|--:|--:|--:|
-| Sh Manectric | 🟣 Ultra raro | 🔴 Hunt lv alto | 30 | 30 | ✅ 0 |
-
-## 10º · Selene (NPC #17) ⏳
+## 9º · Selene (NPC #17) ⏳
 
 - [ ] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/IWLKYmI)
 - Elemento: 🔮 Psíquico / pedra
-- Pede para matar: 5 Grumpig, 5 Chimecho, 5 Claydol, 5 Lunatone, 5 Solrock, 5 Gardevoir
+- Falta matar: 5 Grumpig, 5 Chimecho, 5 Claydol, 5 Lunatone, 5 Solrock, 5 Gardevoir
 - ➡️ Próximo: Ferris
 
 | Pokémon | Raridade | Como | Meta | Mortos | Faltam |
@@ -216,12 +202,12 @@ Para juntar e fazer quando tiver time/level.
 | Sh Solrock | 🟢 T1 | 🟢 Sozinho (respawn) | 5 | 0 | 5 |
 | Sh Gardevoir | 🟣 Ultra raro | 🔴 Hunt lv alto | 5 | 0 | 5 |
 
-## 11º · Ferris (NPC #6) ⏳
+## 10º · Ferris (NPC #6) ⏳
 
 - [ ] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/PKI4Fgs)
 - Elemento: ⚙️ Aço / caverna
-- Pede para matar: 10 Mawile, 10 Aggron, 10 Metagross
+- Falta matar: 10 Mawile, 10 Aggron, 10 Metagross
 - ➡️ Próximo: Glacis
 
 | Pokémon | Raridade | Como | Meta | Mortos | Faltam |
@@ -230,12 +216,12 @@ Para juntar e fazer quando tiver time/level.
 | Sh Aggron | 🔵 Super raro | 🟢 Sozinho (respawn) | 10 | 0 | 10 |
 | Sh Metagross | 🟣 Ultra raro | 🔴 Hunt lv alto | 10 | 0 | 10 |
 
-## 12º · Glacis (NPC #10) ⏳
+## 11º · Glacis (NPC #10) ⏳
 
 - [ ] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/0e03YqH)
 - Elemento: ❄️ Gelo / água
-- Pede para matar: 15 Walrein, 15 Glalie
+- Falta matar: 15 Walrein, 15 Glalie
 - ➡️ Próximo: Calder
 
 | Pokémon | Raridade | Como | Meta | Mortos | Faltam |
@@ -243,12 +229,12 @@ Para juntar e fazer quando tiver time/level.
 | Sh Walrein | 🔵 Super raro | 🟢 Sozinho (respawn) | 15 | 0 | 15 |
 | Sh Glalie | 🟣 Ultra raro | 🔴 Hunt lv alto | 15 | 0 | 15 |
 
-## 13º · Calder (NPC #14) ⏳
+## 12º · Calder (NPC #14) ⏳
 
 - [ ] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/vqSpNqd)
 - Elemento: 🔥 Fogo / vulcão
-- Pede para matar: 15 Camerupt, 15 Torkoal
+- Falta matar: 15 Camerupt, 15 Torkoal
 - ➡️ Próximo: Kaela
 
 | Pokémon | Raridade | Como | Meta | Mortos | Faltam |
@@ -256,12 +242,12 @@ Para juntar e fazer quando tiver time/level.
 | Sh Camerupt | 🟢 T1 | 🟢 Sozinho (respawn) | 15 | 0 | 15 |
 | Sh Torkoal | 🟣 Ultra raro | 🔴 Hunt lv alto | 15 | 0 | 15 |
 
-## 14º · Kaela (NPC #15) ⏳
+## 13º · Kaela (NPC #15) ⏳
 
 - [ ] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/tJym2M8)
 - Elemento: 🌿🔥🌊 Iniciais
-- Pede para matar: 10 Sceptile, 10 Blaziken, 10 Swampert
+- Falta matar: 10 Sceptile, 10 Blaziken, 10 Swampert
 - ➡️ Próximo: Rohgar
 
 | Pokémon | Raridade | Como | Meta | Mortos | Faltam |
@@ -270,12 +256,12 @@ Para juntar e fazer quando tiver time/level.
 | Sh Blaziken | 🟣 Ultra raro | 🔴 Hunt lv alto | 10 | 0 | 10 |
 | Sh Swampert | 🟣 Ultra raro | 🔴 Hunt lv alto | 10 | 0 | 10 |
 
-## 15º · Rohgar (NPC #4) ⏳
+## 14º · Rohgar (NPC #4) ⏳
 
 - [ ] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/SJ6dfJN)
 - Elemento: 🌑 Sombrio / campo
-- Pede para matar: 6 Zangoose, 6 Seviper, 6 Sharpedo, 6 Mightyena, 6 Absol
+- Falta matar: 6 Zangoose, 6 Seviper, 6 Sharpedo, 6 Mightyena, 6 Absol
 - ➡️ Próximo: Draven
 
 | Pokémon | Raridade | Como | Meta | Mortos | Faltam |
@@ -286,12 +272,12 @@ Para juntar e fazer quando tiver time/level.
 | Sh Mightyena | 🟣 Ultra raro | 🔴 Hunt lv alto | 6 | 0 | 6 |
 | Sh Absol | 🟠 Lendário | 🔴 Hunt lv alto | 6 | 0 | 6 |
 
-## 16º · Draven (NPC #5) ⏳
+## 15º · Draven (NPC #5) ⏳
 
 - [ ] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/UvZJqKw)
 - Elemento: 🐉 Dragão / deserto
-- Pede para matar: 15 Salamence, 15 Flygon
+- Falta matar: 15 Salamence, 15 Flygon
 - ➡️ Próximo: Hadriel
 
 | Pokémon | Raridade | Como | Meta | Mortos | Faltam |
@@ -299,12 +285,12 @@ Para juntar e fazer quando tiver time/level.
 | Sh Salamence | 🟣 Ultra raro | 🔴 Hunt lv alto | 15 | 0 | 15 |
 | Sh Flygon | 🟠 Lendário | 🔴 Hunt lv alto | 15 | 0 | 15 |
 
-## 17º · Hadriel (NPC #11) ⏳
+## 16º · Hadriel (NPC #11) ⏳
 
 - [ ] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/ocIvomr)
 - Elemento: 🥊 Lutador / normal
-- Pede para matar: 10 Hariyama, 10 Medicham, 10 Slaking
+- Falta matar: 10 Hariyama, 10 Medicham, 10 Slaking
 - ➡️ Próximo: — (última)
 
 | Pokémon | Raridade | Como | Meta | Mortos | Faltam |
