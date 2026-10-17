@@ -41,7 +41,8 @@ def hard_left(n): return [(p,m-mortos(p,m)) for p,m in n[5] if TIER[p] not in SO
 solo=[n for n in N if not hard_left(n)]
 duro=sorted([n for n in N if hard_left(n)],key=lambda n:(max(rank(p) for p,_ in hard_left(n)),sum(f for _,f in hard_left(n))))
 N=solo+duro
-def pede(n): return ", ".join(f"{m-mortos(p,m)} {p}" for p,m in sorted(n[5],key=lambda x:rank(x[0])) if mortos(p,m)<m)
+RECOMPENSA=set()  # NPCs que já entregaram a recompensa
+def pede(n): return ", ".join(f"{m} {p} ✅" if mortos(p,m)>=m else (f"{m-mortos(p,m)}/{m} {p}" if mortos(p,m) else f"{m} {p}") for p,m in sorted(n[5],key=lambda x:rank(x[0])))
 def feito(n): return all(mortos(p,m)>=m for p,m in n[5])
 done=[n for n in N if feito(n)]
 solo=[n for n in solo if not feito(n)]
@@ -62,18 +63,22 @@ o+=["# Tasks de Hazard — PokeAlliance","",
 "Dentro de cada NPC os pokes estão do mais fácil pro mais difícil.",""]
 o+=["## Ordem e checklist das missões","",
 "Primeiro os NPCs que dá pra fazer **sozinho** (só T2, T1 e Super raro). Por último os que têm qualquer poke de **hunt lv alto** (Ultra raro, Lendário, Mítico), do mais fácil pro mais difícil.",""]
-HDR=["| Ordem | NPC | Status | Missão pega | Mapa | Falta matar | Hunt difícil | Progresso |","|---|---|---|---|---|---|---|---|"]
+HDR=["| Ordem | NPC | Status | Missão pega | Mapa | Pokes (✅ = já matou) | Hunt difícil | Progresso |","|---|---|---|---|---|---|---|---|"]
 for i,n in enumerate(N,1):
     if i==1: o+=["### 🟢 Sozinho no respawn",""]+HDR
     if i==len(solo)+1: o+=["","### 🔴 Têm hunt de level alto (deixar por último)",""]+HDR
     f,t=prog(n)
     dif=[f"{p} ({TIER[p]})" for p,_ in hard_left(n)]
     o.append(f"| {i}º | {n[1]} (#{n[0]}) | {status(n)} | {'☑️' if n[4] else '⬜'} | [ver no mapa](https://imgur.com/a/{n[2]}) | {pede(n)} | {'🔴 '+', '.join(dif) if dif else '🟢 nenhuma'} | {f} / {t} |")
-o+=["","### ✅ Concluídas",""]+([f"- {n[1]} (#{n[0]}) — {', '.join(f'{m} {p}' for p,m in n[5])}" for n in done] or ["- nenhuma ainda"])
+o+=["","### ✅ Concluídas (kills completas)",""]
+if done:
+    o+=["| NPC | Mapa | Pokes | Recompensa |","|---|---|---|---|"]
+    for n in done: o.append(f"| {n[1]} (#{n[0]}) | [ver no mapa](https://imgur.com/a/{n[2]}) | {pede(n)} | {'✅ entregue' if n[1] in RECOMPENSA else '🎁 falta pegar'} |")
+else: o.append("- nenhuma ainda")
 o+=["",f"**Missões pegas: {sum(n[4] for n in N+done)} / {len(N)+len(done)}** · **Total: {feitos} / {tot} shinies**",""]
 o+=["## 🔴 Hunts de level alto (todas as NPCs)","","Para juntar e fazer quando tiver time/level.","",
 "| Pokémon | Raridade | NPC | Faltam |","|---|---|---|--:|"]
-dur=[(p,m,n) for n in N for p,m in n[5] if TIER[p] not in SOLO and mortos(p,m)<m]
+dur=[(p,m,n) for n in N+done for p,m in n[5] if TIER[p] not in SOLO]
 for p,m,n in sorted(dur,key=lambda x:-rank(x[0])):
     f=m-mortos(p,m)
     o.append(f"| Sh {p} | {tier_txt(p)} | {n[1]} | {'✅ 0' if f==0 else f} |")
@@ -83,12 +88,11 @@ for i,n in enumerate(N,1):
         f"- [{'x' if n[4] else ' '}] Missão pega",
         f"- 📍 Mapa: [ver no mapa](https://imgur.com/a/{n[2]})",
         f"- Elemento: {n[3]}",
-        f"- Falta matar: {pede(n) or 'nada ✅'}",
+        f"- Pokes: {pede(n)}",
         f"- ➡️ Próximo: {N[i][1] if i<len(N) else '— (última)'}","",
         "| Pokémon | Raridade | Como | Meta | Mortos | Faltam |","|---|---|---|--:|--:|--:|"]
     for p,m in sorted(n[5],key=lambda x:rank(x[0])):
         k=mortos(p,m); f=m-k
-        if f==0: continue
         o.append(f"| Sh {p} | {tier_txt(p)} | {modo(p)} | {m} | {k} | {'✅ 0' if f==0 else f} |")
     o.append("")
 open(__import__("os").path.join(__import__("os").path.dirname(__file__),"README.md"),"w").write("\n".join(o))
