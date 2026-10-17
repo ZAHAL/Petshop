@@ -22,7 +22,7 @@ Primeiro os NPCs que dá pra fazer **sozinho** (só T2, T1 e Super raro). Por ú
 | Ordem | NPC | Status | Missão pega | Mapa | Pokes (✅ = já matou) | Hunt difícil | Progresso |
 |---|---|---|---|---|---|---|---|
 | 1º | Talia (#7) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/G9d2mFX) | 8 Breloom, 8 Shiftry, 7 Cacturne, 7 Tropius ✅ | 🟢 nenhuma | 7 / 30 |
-| 2º | Nerida (#2) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/xg5rMPJ) | 6 Luvdisc, 6 Clamperl, 6 Wailord, 6 Whiscash, 6 Crawdaunt ✅ | 🟢 nenhuma | 6 / 30 |
+| 2º | Nerida (#2) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/xg5rMPJ) | 6 Luvdisc ✅, 6 Clamperl, 6 Wailord, 6 Whiscash, 6 Crawdaunt ✅ | 🟢 nenhuma | 12 / 30 |
 | 3º | Maera (#18) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/wVfbJ3e) | 8 Huntail, 7 Gorebyss, 7 Relicanth, 8 Milotic ✅ | 🟢 nenhuma | 8 / 30 |
 | 4º | Orlan (#16) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/Vb1w5mD) | 15 Pelipper, 15 Altaria | 🟢 nenhuma | 0 / 30 |
 | 5º | Verdra (#3) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/zvLFSgR) | 15 Roselia, 15 Cradily | 🟢 nenhuma | 0 / 30 |
@@ -49,7 +49,7 @@ Primeiro os NPCs que dá pra fazer **sozinho** (só T2, T1 e Super raro). Por ú
 |---|---|---|---|
 | Voltrix (#9) | [ver no mapa](https://imgur.com/a/UanfcaO) | 30 Manectric ✅ | 🎁 falta pegar |
 
-**Missões pegas: 5 / 17** · **Total: 63 / 510 shinies**
+**Missões pegas: 5 / 17** · **Total: 69 / 510 shinies**
 
 ## 🔴 Hunts de level alto (todas as NPCs)
 
@@ -93,12 +93,12 @@ Para juntar e fazer quando tiver time/level.
 - [x] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/xg5rMPJ)
 - Elemento: 🌊 Água / mar
-- Pokes: 6 Luvdisc, 6 Clamperl, 6 Wailord, 6 Whiscash, 6 Crawdaunt ✅
+- Pokes: 6 Luvdisc ✅, 6 Clamperl, 6 Wailord, 6 Whiscash, 6 Crawdaunt ✅
 - ➡️ Próximo: Maera
 
 | Pokémon | Raridade | Como | Meta | Mortos | Faltam |
 |---|---|---|--:|--:|--:|
-| Sh Luvdisc | ⚪ T2 | 🟢 Sozinho (respawn) | 6 | 0 | 6 |
+| Sh Luvdisc | ⚪ T2 | 🟢 Sozinho (respawn) | 6 | 6 | ✅ 0 |
 | Sh Clamperl | ⚪ T2 | 🟢 Sozinho (respawn) | 6 | 0 | 6 |
 | Sh Wailord | 🟢 T1 | 🟢 Sozinho (respawn) | 6 | 0 | 6 |
 | Sh Whiscash | 🟢 T1 | 🟢 Sozinho (respawn) | 6 | 0 | 6 |
