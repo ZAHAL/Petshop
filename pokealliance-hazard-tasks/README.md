@@ -22,7 +22,7 @@ Primeiro os NPCs que dá pra fazer **sozinho** (só T2, T1 e Super raro). Por ú
 | Ordem | NPC | Status | Missão pega | Mapa | Pokes (✅ = já matou) | Hunt difícil | Progresso |
 |---|---|---|---|---|---|---|---|
 | 1º | Orlan (#16) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/Vb1w5mD) | 15 Pelipper, 15 Altaria | 🟢 nenhuma | 0 / 30 |
-| 2º | Verdra (#3) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/zvLFSgR) | 15 Roselia, 15 Cradily | 🟢 nenhuma | 0 / 30 |
+| 2º | Verdra (#3) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/zvLFSgR) | 15 Roselia, 15 Cradily ✅ | 🟢 nenhuma | 15 / 30 |
 | 3º | Lucine (#12) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/aLVehVK) | 8 Linoone, 8 Delcatty, 7 Kecleon, 7 Swellow | 🟢 nenhuma | 0 / 30 |
 | 4º | Rohgar (#4) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/SJ6dfJN) | 6 Zangoose, 6 Seviper, 6 Sharpedo, 6 Mightyena ✅, 6 Absol ✅ | 🟢 nenhuma | 12 / 30 |
 | 5º | Veska (#13) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/IEHYSjh) | 4 Volbeat, 4 Illumise, 5 Beautifly, 5 Dustox, 4 Masquerain, 4 Ninjask, 4 Shedinja | 🟢 nenhuma | 0 / 30 |
@@ -49,7 +49,7 @@ Primeiro os NPCs que dá pra fazer **sozinho** (só T2, T1 e Super raro). Por ú
 | Maera (#18) | [ver no mapa](https://imgur.com/a/wVfbJ3e) | 8 Huntail ✅, 7 Gorebyss ✅, 7 Relicanth ✅, 8 Milotic ✅ | 🎁 falta pegar |
 | Voltrix (#9) | [ver no mapa](https://imgur.com/a/UanfcaO) | 30 Manectric ✅ | 🎁 falta pegar |
 
-**Missões pegas: 5 / 17** · **Total: 132 / 510 shinies**
+**Missões pegas: 6 / 17** · **Total: 147 / 510 shinies**
 
 ## 🔴 Hunts de level alto (todas as NPCs)
 
@@ -86,18 +86,18 @@ Para juntar e fazer quando tiver time/level.
 | Sh Pelipper | 🟢 T1 | 🟢 Sozinho (respawn) | 15 | 0 | 15 |
 | Sh Altaria | 🔵 Super raro | 🟢 Sozinho (respawn) | 15 | 0 | 15 |
 
-## 2º · Verdra (NPC #3) ⏳
+## 2º · Verdra (NPC #3) 🔄
 
-- [ ] Missão pega
+- [x] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/zvLFSgR)
 - Elemento: 🌿 Grama + 🪨 Pedra
-- Pokes: 15 Roselia, 15 Cradily
+- Pokes: 15 Roselia, 15 Cradily ✅
 - ➡️ Próximo: Lucine
 
 | Pokémon | Raridade | Como | Meta | Mortos | Faltam |
 |---|---|---|--:|--:|--:|
 | Sh Roselia | 🟢 T1 | 🟢 Sozinho (respawn) | 15 | 0 | 15 |
-| Sh Cradily | 🟢 T1 | 🟢 Sozinho (respawn) | 15 | 0 | 15 |
+| Sh Cradily | 🟢 T1 | 🟢 Sozinho (respawn) | 15 | 15 | ✅ 0 |
 
 ## 3º · Lucine (NPC #12) ⏳
 
