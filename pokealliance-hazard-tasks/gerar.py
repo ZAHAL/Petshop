@@ -30,7 +30,7 @@ ORDEM=["T2","T1","Super raro","Ultra raro","Lendário","Mítico"]  # mais fácil
 ICON={"T2":"⚪","T1":"🟢","Super raro":"🔵","Ultra raro":"🟣","Lendário":"🟠","Mítico":"🔴"}
 TIER={p:t for t,ps in TIERS.items() for p in ps.split()}
 SOLO={"T2","T1","Super raro"}
-MORTOS={"Tropius":7,"Manectric":30,"Milotic":8,"Mightyena":6,"Absol":6,"Crawdaunt":6,"Luvdisc":6,"Gorebyss":7,"Clamperl":6,"Huntail":8,"Relicanth":7,"Wailord":6,"Whiscash":6,"Breloom":8,"Shiftry":8,"Cacturne":7,"Cradily":15}
+MORTOS={"Tropius":7,"Manectric":30,"Milotic":8,"Mightyena":6,"Absol":6,"Crawdaunt":6,"Luvdisc":6,"Gorebyss":7,"Clamperl":6,"Huntail":8,"Relicanth":7,"Wailord":6,"Whiscash":6,"Breloom":8,"Shiftry":8,"Cacturne":7,"Cradily":15,"Roselia":15}
 todos=[p for n in N for p,_ in n[5]]
 assert set(todos)==set(TIER), set(todos)^set(TIER)
 def rank(p): return ORDEM.index(TIER[p])
