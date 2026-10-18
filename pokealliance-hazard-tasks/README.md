@@ -43,11 +43,11 @@ Primeiro os NPCs que dá pra fazer **sozinho** (só T2, T1 e Super raro). Por ú
 
 | NPC | Mapa | Pokes | Recompensa |
 |---|---|---|---|
-| Talia (#7) | [ver no mapa](https://imgur.com/a/G9d2mFX) | 8 Breloom ✅, 8 Shiftry ✅, 7 Cacturne ✅, 7 Tropius ✅ | 🎁 falta pegar |
-| Nerida (#2) | [ver no mapa](https://imgur.com/a/xg5rMPJ) | 6 Luvdisc ✅, 6 Clamperl ✅, 6 Wailord ✅, 6 Whiscash ✅, 6 Crawdaunt ✅ | 🎁 falta pegar |
-| Maera (#18) | [ver no mapa](https://imgur.com/a/wVfbJ3e) | 8 Huntail ✅, 7 Gorebyss ✅, 7 Relicanth ✅, 8 Milotic ✅ | 🎁 falta pegar |
-| Verdra (#3) | [ver no mapa](https://imgur.com/a/zvLFSgR) | 15 Roselia ✅, 15 Cradily ✅ | 🎁 falta pegar |
-| Voltrix (#9) | [ver no mapa](https://imgur.com/a/UanfcaO) | 30 Manectric ✅ | 🎁 falta pegar |
+| Talia (#7) | [ver no mapa](https://imgur.com/a/G9d2mFX) | 8 Breloom ✅, 8 Shiftry ✅, 7 Cacturne ✅, 7 Tropius ✅ | ✅ entregue |
+| Nerida (#2) | [ver no mapa](https://imgur.com/a/xg5rMPJ) | 6 Luvdisc ✅, 6 Clamperl ✅, 6 Wailord ✅, 6 Whiscash ✅, 6 Crawdaunt ✅ | ✅ entregue |
+| Maera (#18) | [ver no mapa](https://imgur.com/a/wVfbJ3e) | 8 Huntail ✅, 7 Gorebyss ✅, 7 Relicanth ✅, 8 Milotic ✅ | ✅ entregue |
+| Verdra (#3) | [ver no mapa](https://imgur.com/a/zvLFSgR) | 15 Roselia ✅, 15 Cradily ✅ | ✅ entregue |
+| Voltrix (#9) | [ver no mapa](https://imgur.com/a/UanfcaO) | 30 Manectric ✅ | ✅ entregue |
 
 **Missões pegas: 7 / 17** · **Total: 172 / 510 shinies**
 
