@@ -33,9 +33,9 @@ Primeiro os NPCs que dá pra fazer **sozinho** (só T2, T1 e Super raro). Por ú
 | Ordem | NPC | Status | Missão pega | Mapa | Pokes (✅ = já matou) | Hunt difícil | Progresso |
 |---|---|---|---|---|---|---|---|
 | 7º | Selene (#17) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/IWLKYmI) | 5 Grumpig, 5 Chimecho, 5 Claydol, 5 Lunatone, 5 Solrock, 5 Gardevoir | 🔴 Gardevoir (Ultra raro) | 0 / 30 |
-| 8º | Glacis (#10) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/0e03YqH) | 15 Walrein, 15 Glalie | 🔴 Glalie (Ultra raro) | 0 / 30 |
-| 9º | Calder (#14) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/vqSpNqd) | 15 Camerupt, 15 Torkoal | 🔴 Torkoal (Ultra raro) | 0 / 30 |
-| 10º | Kaela (#15) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/tJym2M8) | 10 Sceptile, 10 Blaziken, 10 Swampert | 🔴 Sceptile (Ultra raro), Blaziken (Ultra raro), Swampert (Ultra raro) | 0 / 30 |
+| 8º | Kaela (#15) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/tJym2M8) | 10 Sceptile, 10 Blaziken ✅, 10 Swampert ✅ | 🔴 Sceptile (Ultra raro) | 20 / 30 |
+| 9º | Glacis (#10) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/0e03YqH) | 15 Walrein, 15 Glalie | 🔴 Glalie (Ultra raro) | 0 / 30 |
+| 10º | Calder (#14) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/vqSpNqd) | 15 Camerupt, 15 Torkoal | 🔴 Torkoal (Ultra raro) | 0 / 30 |
 | 11º | Draven (#5) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/UvZJqKw) | 15 Salamence, 15 Flygon | 🔴 Flygon (Lendário), Salamence (Ultra raro) | 0 / 30 |
 | 12º | Hadriel (#11) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/ocIvomr) | 10 Hariyama, 10 Medicham, 10 Slaking | 🔴 Slaking (Mítico) | 0 / 30 |
 
@@ -49,7 +49,7 @@ Primeiro os NPCs que dá pra fazer **sozinho** (só T2, T1 e Super raro). Por ú
 | Verdra (#3) | [ver no mapa](https://imgur.com/a/zvLFSgR) | 15 Roselia ✅, 15 Cradily ✅ | ✅ entregue |
 | Voltrix (#9) | [ver no mapa](https://imgur.com/a/UanfcaO) | 30 Manectric ✅ | ✅ entregue |
 
-**Missões pegas: 7 / 17** · **Total: 172 / 510 shinies**
+**Missões pegas: 8 / 17** · **Total: 192 / 510 shinies**
 
 ## 🔴 Hunts de level alto (todas as NPCs)
 
@@ -63,11 +63,11 @@ Para juntar e fazer quando tiver time/level.
 | Sh Metagross | 🟣 Ultra raro | Ferris | ✅ 0 |
 | Sh Mightyena | 🟣 Ultra raro | Rohgar | ✅ 0 |
 | Sh Gardevoir | 🟣 Ultra raro | Selene | 5 |
+| Sh Sceptile | 🟣 Ultra raro | Kaela | 10 |
+| Sh Blaziken | 🟣 Ultra raro | Kaela | ✅ 0 |
+| Sh Swampert | 🟣 Ultra raro | Kaela | ✅ 0 |
 | Sh Glalie | 🟣 Ultra raro | Glacis | 15 |
 | Sh Torkoal | 🟣 Ultra raro | Calder | 15 |
-| Sh Sceptile | 🟣 Ultra raro | Kaela | 10 |
-| Sh Blaziken | 🟣 Ultra raro | Kaela | 10 |
-| Sh Swampert | 🟣 Ultra raro | Kaela | 10 |
 | Sh Salamence | 🟣 Ultra raro | Draven | 15 |
 | Sh Tropius | 🟣 Ultra raro | Talia | ✅ 0 |
 | Sh Milotic | 🟣 Ultra raro | Maera | ✅ 0 |
@@ -169,7 +169,7 @@ Para juntar e fazer quando tiver time/level.
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/IWLKYmI)
 - Elemento: 🔮 Psíquico / pedra
 - Pokes: 5 Grumpig, 5 Chimecho, 5 Claydol, 5 Lunatone, 5 Solrock, 5 Gardevoir
-- ➡️ Próximo: Glacis
+- ➡️ Próximo: Kaela
 
 | Pokémon | Raridade | Como | Meta | Mortos | Faltam |
 |---|---|---|--:|--:|--:|
@@ -180,7 +180,21 @@ Para juntar e fazer quando tiver time/level.
 | Sh Solrock | 🟢 T1 | 🟢 Sozinho (respawn) | 5 | 0 | 5 |
 | Sh Gardevoir | 🟣 Ultra raro | 🔴 Hunt lv alto | 5 | 0 | 5 |
 
-## 8º · Glacis (NPC #10) ⏳
+## 8º · Kaela (NPC #15) 🔄
+
+- [x] Missão pega
+- 📍 Mapa: [ver no mapa](https://imgur.com/a/tJym2M8)
+- Elemento: 🌿🔥🌊 Iniciais
+- Pokes: 10 Sceptile, 10 Blaziken ✅, 10 Swampert ✅
+- ➡️ Próximo: Glacis
+
+| Pokémon | Raridade | Como | Meta | Mortos | Faltam |
+|---|---|---|--:|--:|--:|
+| Sh Sceptile | 🟣 Ultra raro | 🔴 Hunt lv alto | 10 | 0 | 10 |
+| Sh Blaziken | 🟣 Ultra raro | 🔴 Hunt lv alto | 10 | 10 | ✅ 0 |
+| Sh Swampert | 🟣 Ultra raro | 🔴 Hunt lv alto | 10 | 10 | ✅ 0 |
+
+## 9º · Glacis (NPC #10) ⏳
 
 - [ ] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/0e03YqH)
@@ -193,32 +207,18 @@ Para juntar e fazer quando tiver time/level.
 | Sh Walrein | 🔵 Super raro | 🟢 Sozinho (respawn) | 15 | 0 | 15 |
 | Sh Glalie | 🟣 Ultra raro | 🔴 Hunt lv alto | 15 | 0 | 15 |
 
-## 9º · Calder (NPC #14) ⏳
+## 10º · Calder (NPC #14) ⏳
 
 - [ ] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/vqSpNqd)
 - Elemento: 🔥 Fogo / vulcão
 - Pokes: 15 Camerupt, 15 Torkoal
-- ➡️ Próximo: Kaela
+- ➡️ Próximo: Draven
 
 | Pokémon | Raridade | Como | Meta | Mortos | Faltam |
 |---|---|---|--:|--:|--:|
 | Sh Camerupt | 🟢 T1 | 🟢 Sozinho (respawn) | 15 | 0 | 15 |
 | Sh Torkoal | 🟣 Ultra raro | 🔴 Hunt lv alto | 15 | 0 | 15 |
-
-## 10º · Kaela (NPC #15) ⏳
-
-- [ ] Missão pega
-- 📍 Mapa: [ver no mapa](https://imgur.com/a/tJym2M8)
-- Elemento: 🌿🔥🌊 Iniciais
-- Pokes: 10 Sceptile, 10 Blaziken, 10 Swampert
-- ➡️ Próximo: Draven
-
-| Pokémon | Raridade | Como | Meta | Mortos | Faltam |
-|---|---|---|--:|--:|--:|
-| Sh Sceptile | 🟣 Ultra raro | 🔴 Hunt lv alto | 10 | 0 | 10 |
-| Sh Blaziken | 🟣 Ultra raro | 🔴 Hunt lv alto | 10 | 0 | 10 |
-| Sh Swampert | 🟣 Ultra raro | 🔴 Hunt lv alto | 10 | 0 | 10 |
 
 ## 11º · Draven (NPC #5) ⏳
 
