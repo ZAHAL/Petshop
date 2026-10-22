@@ -21,7 +21,7 @@ Primeiro os NPCs que dá pra fazer **sozinho** (só T2, T1 e Super raro). Por ú
 
 | Ordem | NPC | Status | Missão pega | Mapa | Pokes (✅ = já matou) | Hunt difícil | Progresso |
 |---|---|---|---|---|---|---|---|
-| 1º | Rohgar (#4) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/SJ6dfJN) | 6 Zangoose, 6 Seviper, 6 Sharpedo, 6 Mightyena ✅, 6 Absol ✅ | 🟢 nenhuma | 12 / 30 |
+| 1º | Rohgar (#4) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/SJ6dfJN) | 6 Zangoose, 6 Seviper ✅, 6 Sharpedo, 6 Mightyena ✅, 6 Absol ✅ | 🟢 nenhuma | 18 / 30 |
 | 2º | Veska (#13) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/IEHYSjh) | 4 Volbeat, 4 Illumise, 5 Beautifly, 5 Dustox, 4 Masquerain, 4 Ninjask, 4 Shedinja | 🟢 nenhuma | 0 / 30 |
 
 ### 🔴 Têm hunt de level alto (deixar por último)
@@ -49,7 +49,7 @@ Primeiro os NPCs que dá pra fazer **sozinho** (só T2, T1 e Super raro). Por ú
 | Nyxen (#8) | [ver no mapa](https://imgur.com/a/xSn4850) | 10 Sableye ✅, 10 Banette ✅, 10 Dusclops ✅ | 🎁 falta pegar |
 | Voltrix (#9) | [ver no mapa](https://imgur.com/a/UanfcaO) | 30 Manectric ✅ | ✅ entregue |
 
-**Missões pegas: 11 / 17** · **Total: 302 / 510 shinies**
+**Missões pegas: 11 / 17** · **Total: 308 / 510 shinies**
 
 ## 🔴 Hunts de level alto (todas as NPCs)
 
@@ -78,13 +78,13 @@ Para juntar e fazer quando tiver time/level.
 - [x] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/SJ6dfJN)
 - Elemento: 🌑 Sombrio / campo
-- Pokes: 6 Zangoose, 6 Seviper, 6 Sharpedo, 6 Mightyena ✅, 6 Absol ✅
+- Pokes: 6 Zangoose, 6 Seviper ✅, 6 Sharpedo, 6 Mightyena ✅, 6 Absol ✅
 - ➡️ Próximo: Veska
 
 | Pokémon | Raridade | Como | Meta | Mortos | Faltam |
 |---|---|---|--:|--:|--:|
 | Sh Zangoose | 🟢 T1 | 🟢 Sozinho (respawn) | 6 | 0 | 6 |
-| Sh Seviper | 🔵 Super raro | 🟢 Sozinho (respawn) | 6 | 0 | 6 |
+| Sh Seviper | 🔵 Super raro | 🟢 Sozinho (respawn) | 6 | 6 | ✅ 0 |
 | Sh Sharpedo | 🔵 Super raro | 🟢 Sozinho (respawn) | 6 | 0 | 6 |
 | Sh Mightyena | 🟣 Ultra raro | 🔴 Hunt lv alto | 6 | 6 | ✅ 0 |
 | Sh Absol | 🟠 Lendário | 🔴 Hunt lv alto | 6 | 6 | ✅ 0 |
