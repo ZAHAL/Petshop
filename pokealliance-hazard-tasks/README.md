@@ -22,7 +22,7 @@ Primeiro os NPCs que dá pra fazer **sozinho** (só T2, T1 e Super raro). Por ú
 | Ordem | NPC | Status | Missão pega | Mapa | Pokes (✅ = já matou) | Hunt difícil | Progresso |
 |---|---|---|---|---|---|---|---|
 | 1º | Ferris (#6) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/PKI4Fgs) | 10 Mawile, 10 Aggron, 10 Metagross ✅ | 🟢 nenhuma | 10 / 30 |
-| 2º | Lucine (#12) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/aLVehVK) | 8 Linoone, 8 Delcatty, 7 Kecleon, 7 Swellow | 🟢 nenhuma | 0 / 30 |
+| 2º | Lucine (#12) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/aLVehVK) | 8 Linoone, 8 Delcatty ✅, 7 Kecleon, 7 Swellow | 🟢 nenhuma | 8 / 30 |
 | 3º | Rohgar (#4) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/SJ6dfJN) | 6 Zangoose, 6 Seviper, 6 Sharpedo, 6 Mightyena ✅, 6 Absol ✅ | 🟢 nenhuma | 12 / 30 |
 | 4º | Veska (#13) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/IEHYSjh) | 4 Volbeat, 4 Illumise, 5 Beautifly, 5 Dustox, 4 Masquerain, 4 Ninjask, 4 Shedinja | 🟢 nenhuma | 0 / 30 |
 | 5º | Nyxen (#8) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/xSn4850) | 10 Sableye, 10 Banette, 10 Dusclops | 🟢 nenhuma | 0 / 30 |
@@ -49,7 +49,7 @@ Primeiro os NPCs que dá pra fazer **sozinho** (só T2, T1 e Super raro). Por ú
 | Verdra (#3) | [ver no mapa](https://imgur.com/a/zvLFSgR) | 15 Roselia ✅, 15 Cradily ✅ | ✅ entregue |
 | Voltrix (#9) | [ver no mapa](https://imgur.com/a/UanfcaO) | 30 Manectric ✅ | ✅ entregue |
 
-**Missões pegas: 9 / 17** · **Total: 222 / 510 shinies**
+**Missões pegas: 10 / 17** · **Total: 230 / 510 shinies**
 
 ## 🔴 Hunts de level alto (todas as NPCs)
 
@@ -87,18 +87,18 @@ Para juntar e fazer quando tiver time/level.
 | Sh Aggron | 🔵 Super raro | 🟢 Sozinho (respawn) | 10 | 0 | 10 |
 | Sh Metagross | 🟣 Ultra raro | 🔴 Hunt lv alto | 10 | 10 | ✅ 0 |
 
-## 2º · Lucine (NPC #12) ⏳
+## 2º · Lucine (NPC #12) 🔄
 
-- [ ] Missão pega
+- [x] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/aLVehVK)
 - Elemento: ⚪ Normal / rota
-- Pokes: 8 Linoone, 8 Delcatty, 7 Kecleon, 7 Swellow
+- Pokes: 8 Linoone, 8 Delcatty ✅, 7 Kecleon, 7 Swellow
 - ➡️ Próximo: Rohgar
 
 | Pokémon | Raridade | Como | Meta | Mortos | Faltam |
 |---|---|---|--:|--:|--:|
 | Sh Linoone | ⚪ T2 | 🟢 Sozinho (respawn) | 8 | 0 | 8 |
-| Sh Delcatty | 🟢 T1 | 🟢 Sozinho (respawn) | 8 | 0 | 8 |
+| Sh Delcatty | 🟢 T1 | 🟢 Sozinho (respawn) | 8 | 8 | ✅ 0 |
 | Sh Kecleon | 🟢 T1 | 🟢 Sozinho (respawn) | 7 | 0 | 7 |
 | Sh Swellow | 🔵 Super raro | 🟢 Sozinho (respawn) | 7 | 0 | 7 |
 
