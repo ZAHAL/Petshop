@@ -25,18 +25,17 @@ Primeiro os NPCs que dá pra fazer **sozinho** (só T2, T1 e Super raro). Por ú
 | 2º | Lucine (#12) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/aLVehVK) | 8 Linoone, 8 Delcatty ✅, 7 Kecleon, 7 Swellow | 🟢 nenhuma | 8 / 30 |
 | 3º | Rohgar (#4) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/SJ6dfJN) | 6 Zangoose, 6 Seviper, 6 Sharpedo, 6 Mightyena ✅, 6 Absol ✅ | 🟢 nenhuma | 12 / 30 |
 | 4º | Veska (#13) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/IEHYSjh) | 4 Volbeat, 4 Illumise, 5 Beautifly, 5 Dustox, 4 Masquerain, 4 Ninjask, 4 Shedinja | 🟢 nenhuma | 0 / 30 |
-| 5º | Nyxen (#8) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/xSn4850) | 10 Sableye, 10 Banette, 10 Dusclops | 🟢 nenhuma | 0 / 30 |
 
 ### 🔴 Têm hunt de level alto (deixar por último)
 
 | Ordem | NPC | Status | Missão pega | Mapa | Pokes (✅ = já matou) | Hunt difícil | Progresso |
 |---|---|---|---|---|---|---|---|
-| 6º | Selene (#17) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/IWLKYmI) | 5 Grumpig, 5 Chimecho, 5 Claydol, 5 Lunatone, 5 Solrock, 5 Gardevoir | 🔴 Gardevoir (Ultra raro) | 0 / 30 |
-| 7º | Kaela (#15) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/tJym2M8) | 10 Sceptile, 10 Blaziken ✅, 10 Swampert ✅ | 🔴 Sceptile (Ultra raro) | 20 / 30 |
-| 8º | Glacis (#10) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/0e03YqH) | 15 Walrein, 15 Glalie | 🔴 Glalie (Ultra raro) | 0 / 30 |
-| 9º | Calder (#14) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/vqSpNqd) | 15 Camerupt, 15 Torkoal | 🔴 Torkoal (Ultra raro) | 0 / 30 |
-| 10º | Draven (#5) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/UvZJqKw) | 15 Salamence, 15 Flygon | 🔴 Flygon (Lendário), Salamence (Ultra raro) | 0 / 30 |
-| 11º | Hadriel (#11) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/ocIvomr) | 10 Hariyama, 10 Medicham, 10 Slaking | 🔴 Slaking (Mítico) | 0 / 30 |
+| 5º | Selene (#17) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/IWLKYmI) | 5 Grumpig, 5 Chimecho, 5 Claydol, 5 Lunatone, 5 Solrock, 5 Gardevoir | 🔴 Gardevoir (Ultra raro) | 0 / 30 |
+| 6º | Kaela (#15) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/tJym2M8) | 10 Sceptile, 10 Blaziken ✅, 10 Swampert ✅ | 🔴 Sceptile (Ultra raro) | 20 / 30 |
+| 7º | Glacis (#10) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/0e03YqH) | 15 Walrein, 15 Glalie | 🔴 Glalie (Ultra raro) | 0 / 30 |
+| 8º | Calder (#14) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/vqSpNqd) | 15 Camerupt, 15 Torkoal | 🔴 Torkoal (Ultra raro) | 0 / 30 |
+| 9º | Draven (#5) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/UvZJqKw) | 15 Salamence, 15 Flygon | 🔴 Flygon (Lendário), Salamence (Ultra raro) | 0 / 30 |
+| 10º | Hadriel (#11) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/ocIvomr) | 10 Hariyama, 10 Medicham, 10 Slaking | 🔴 Slaking (Mítico) | 0 / 30 |
 
 ### ✅ Concluídas (kills completas)
 
@@ -47,9 +46,10 @@ Primeiro os NPCs que dá pra fazer **sozinho** (só T2, T1 e Super raro). Por ú
 | Maera (#18) | [ver no mapa](https://imgur.com/a/wVfbJ3e) | 8 Huntail ✅, 7 Gorebyss ✅, 7 Relicanth ✅, 8 Milotic ✅ | ✅ entregue |
 | Orlan (#16) | [ver no mapa](https://imgur.com/a/Vb1w5mD) | 15 Pelipper ✅, 15 Altaria ✅ | 🎁 falta pegar |
 | Verdra (#3) | [ver no mapa](https://imgur.com/a/zvLFSgR) | 15 Roselia ✅, 15 Cradily ✅ | ✅ entregue |
+| Nyxen (#8) | [ver no mapa](https://imgur.com/a/xSn4850) | 10 Sableye ✅, 10 Banette ✅, 10 Dusclops ✅ | 🎁 falta pegar |
 | Voltrix (#9) | [ver no mapa](https://imgur.com/a/UanfcaO) | 30 Manectric ✅ | ✅ entregue |
 
-**Missões pegas: 10 / 17** · **Total: 230 / 510 shinies**
+**Missões pegas: 11 / 17** · **Total: 260 / 510 shinies**
 
 ## 🔴 Hunts de level alto (todas as NPCs)
 
@@ -124,7 +124,7 @@ Para juntar e fazer quando tiver time/level.
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/IEHYSjh)
 - Elemento: 🐛 Inseto
 - Pokes: 4 Volbeat, 4 Illumise, 5 Beautifly, 5 Dustox, 4 Masquerain, 4 Ninjask, 4 Shedinja
-- ➡️ Próximo: Nyxen
+- ➡️ Próximo: Selene
 
 | Pokémon | Raridade | Como | Meta | Mortos | Faltam |
 |---|---|---|--:|--:|--:|
@@ -136,21 +136,7 @@ Para juntar e fazer quando tiver time/level.
 | Sh Ninjask | 🟢 T1 | 🟢 Sozinho (respawn) | 4 | 0 | 4 |
 | Sh Shedinja | 🟢 T1 | 🟢 Sozinho (respawn) | 4 | 0 | 4 |
 
-## 5º · Nyxen (NPC #8) ⏳
-
-- [ ] Missão pega
-- 📍 Mapa: [ver no mapa](https://imgur.com/a/xSn4850)
-- Elemento: 👻 Fantasma / caverna escura
-- Pokes: 10 Sableye, 10 Banette, 10 Dusclops
-- ➡️ Próximo: Selene
-
-| Pokémon | Raridade | Como | Meta | Mortos | Faltam |
-|---|---|---|--:|--:|--:|
-| Sh Sableye | 🟢 T1 | 🟢 Sozinho (respawn) | 10 | 0 | 10 |
-| Sh Banette | 🟢 T1 | 🟢 Sozinho (respawn) | 10 | 0 | 10 |
-| Sh Dusclops | 🟢 T1 | 🟢 Sozinho (respawn) | 10 | 0 | 10 |
-
-## 6º · Selene (NPC #17) ⏳
+## 5º · Selene (NPC #17) ⏳
 
 - [ ] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/IWLKYmI)
@@ -167,7 +153,7 @@ Para juntar e fazer quando tiver time/level.
 | Sh Solrock | 🟢 T1 | 🟢 Sozinho (respawn) | 5 | 0 | 5 |
 | Sh Gardevoir | 🟣 Ultra raro | 🔴 Hunt lv alto | 5 | 0 | 5 |
 
-## 7º · Kaela (NPC #15) 🔄
+## 6º · Kaela (NPC #15) 🔄
 
 - [x] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/tJym2M8)
@@ -181,7 +167,7 @@ Para juntar e fazer quando tiver time/level.
 | Sh Blaziken | 🟣 Ultra raro | 🔴 Hunt lv alto | 10 | 10 | ✅ 0 |
 | Sh Swampert | 🟣 Ultra raro | 🔴 Hunt lv alto | 10 | 10 | ✅ 0 |
 
-## 8º · Glacis (NPC #10) ⏳
+## 7º · Glacis (NPC #10) ⏳
 
 - [ ] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/0e03YqH)
@@ -194,7 +180,7 @@ Para juntar e fazer quando tiver time/level.
 | Sh Walrein | 🔵 Super raro | 🟢 Sozinho (respawn) | 15 | 0 | 15 |
 | Sh Glalie | 🟣 Ultra raro | 🔴 Hunt lv alto | 15 | 0 | 15 |
 
-## 9º · Calder (NPC #14) ⏳
+## 8º · Calder (NPC #14) ⏳
 
 - [ ] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/vqSpNqd)
@@ -207,7 +193,7 @@ Para juntar e fazer quando tiver time/level.
 | Sh Camerupt | 🟢 T1 | 🟢 Sozinho (respawn) | 15 | 0 | 15 |
 | Sh Torkoal | 🟣 Ultra raro | 🔴 Hunt lv alto | 15 | 0 | 15 |
 
-## 10º · Draven (NPC #5) ⏳
+## 9º · Draven (NPC #5) ⏳
 
 - [ ] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/UvZJqKw)
@@ -220,7 +206,7 @@ Para juntar e fazer quando tiver time/level.
 | Sh Salamence | 🟣 Ultra raro | 🔴 Hunt lv alto | 15 | 0 | 15 |
 | Sh Flygon | 🟠 Lendário | 🔴 Hunt lv alto | 15 | 0 | 15 |
 
-## 11º · Hadriel (NPC #11) ⏳
+## 10º · Hadriel (NPC #11) ⏳
 
 - [ ] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/ocIvomr)
