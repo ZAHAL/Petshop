@@ -39,13 +39,13 @@ Primeiro os NPCs que dá pra fazer **sozinho** (só T2, T1 e Super raro). Por ú
 | Talia (#7) | [ver no mapa](https://imgur.com/a/G9d2mFX) | 8 Breloom ✅, 8 Shiftry ✅, 7 Cacturne ✅, 7 Tropius ✅ | ✅ entregue |
 | Nerida (#2) | [ver no mapa](https://imgur.com/a/xg5rMPJ) | 6 Luvdisc ✅, 6 Clamperl ✅, 6 Wailord ✅, 6 Whiscash ✅, 6 Crawdaunt ✅ | ✅ entregue |
 | Maera (#18) | [ver no mapa](https://imgur.com/a/wVfbJ3e) | 8 Huntail ✅, 7 Gorebyss ✅, 7 Relicanth ✅, 8 Milotic ✅ | ✅ entregue |
-| Orlan (#16) | [ver no mapa](https://imgur.com/a/Vb1w5mD) | 15 Pelipper ✅, 15 Altaria ✅ | 🎁 falta pegar |
+| Orlan (#16) | [ver no mapa](https://imgur.com/a/Vb1w5mD) | 15 Pelipper ✅, 15 Altaria ✅ | ✅ entregue |
 | Verdra (#3) | [ver no mapa](https://imgur.com/a/zvLFSgR) | 15 Roselia ✅, 15 Cradily ✅ | ✅ entregue |
 | Ferris (#6) | [ver no mapa](https://imgur.com/a/PKI4Fgs) | 10 Mawile ✅, 10 Aggron ✅, 10 Metagross ✅ | ✅ entregue |
-| Lucine (#12) | [ver no mapa](https://imgur.com/a/aLVehVK) | 8 Linoone ✅, 8 Delcatty ✅, 7 Kecleon ✅, 7 Swellow ✅ | 🎁 falta pegar |
-| Rohgar (#4) | [ver no mapa](https://imgur.com/a/SJ6dfJN) | 6 Zangoose ✅, 6 Seviper ✅, 6 Sharpedo ✅, 6 Mightyena ✅, 6 Absol ✅ | 🎁 falta pegar |
+| Lucine (#12) | [ver no mapa](https://imgur.com/a/aLVehVK) | 8 Linoone ✅, 8 Delcatty ✅, 7 Kecleon ✅, 7 Swellow ✅ | ✅ entregue |
+| Rohgar (#4) | [ver no mapa](https://imgur.com/a/SJ6dfJN) | 6 Zangoose ✅, 6 Seviper ✅, 6 Sharpedo ✅, 6 Mightyena ✅, 6 Absol ✅ | ✅ entregue |
 | Veska (#13) | [ver no mapa](https://imgur.com/a/IEHYSjh) | 4 Volbeat ✅, 4 Illumise ✅, 5 Beautifly ✅, 5 Dustox ✅, 4 Masquerain ✅, 4 Ninjask ✅, 4 Shedinja ✅ | ✅ entregue |
-| Nyxen (#8) | [ver no mapa](https://imgur.com/a/xSn4850) | 10 Sableye ✅, 10 Banette ✅, 10 Dusclops ✅ | 🎁 falta pegar |
+| Nyxen (#8) | [ver no mapa](https://imgur.com/a/xSn4850) | 10 Sableye ✅, 10 Banette ✅, 10 Dusclops ✅ | ✅ entregue |
 | Voltrix (#9) | [ver no mapa](https://imgur.com/a/UanfcaO) | 30 Manectric ✅ | ✅ entregue |
 
 **Missões pegas: 12 / 17** · **Total: 350 / 510 shinies**

@@ -41,7 +41,7 @@ def hard_left(n): return [(p,m-mortos(p,m)) for p,m in n[5] if TIER[p] not in SO
 solo=[n for n in N if not hard_left(n)]
 duro=sorted([n for n in N if hard_left(n)],key=lambda n:(max(rank(p) for p,_ in hard_left(n)),sum(f for _,f in hard_left(n))))
 N=solo+duro
-RECOMPENSA={"Talia","Nerida","Maera","Verdra","Voltrix","Ferris","Veska"}  # NPCs que já entregaram a recompensa
+RECOMPENSA={"Talia","Nerida","Maera","Verdra","Voltrix","Ferris","Veska","Rohgar","Lucine","Orlan","Nyxen"}  # NPCs que já entregaram a recompensa
 def pede(n): return ", ".join(f"{m} {p} ✅" if mortos(p,m)>=m else (f"{m-mortos(p,m)}/{m} {p}" if mortos(p,m) else f"{m} {p}") for p,m in sorted(n[5],key=lambda x:rank(x[0])))
 def feito(n): return all(mortos(p,m)>=m for p,m in n[5])
 done=[n for n in N if feito(n)]
