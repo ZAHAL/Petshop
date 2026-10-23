@@ -19,8 +19,7 @@ Primeiro os NPCs que dá pra fazer **sozinho** (só T2, T1 e Super raro). Por ú
 
 ### 🟢 Sozinho no respawn
 
-| Ordem | NPC | Status | Missão pega | Mapa | Pokes (✅ = já matou) | Hunt difícil | Progresso |
-|---|---|---|---|---|---|---|---|
+- ✅ todos os NPCs de fazer sozinho já foram concluídos
 
 ### 🔴 Têm hunt de level alto (deixar por último)
 

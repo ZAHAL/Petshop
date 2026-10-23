@@ -65,7 +65,7 @@ o+=["## Ordem e checklist das missões","",
 "Primeiro os NPCs que dá pra fazer **sozinho** (só T2, T1 e Super raro). Por último os que têm qualquer poke de **hunt lv alto** (Ultra raro, Lendário, Mítico), do mais fácil pro mais difícil.",""]
 HDR=["| Ordem | NPC | Status | Missão pega | Mapa | Pokes (✅ = já matou) | Hunt difícil | Progresso |","|---|---|---|---|---|---|---|---|"]
 for i,n in enumerate(N,1):
-    if i==1: o+=["### 🟢 Sozinho no respawn",""]+HDR
+    if i==1: o+=["### 🟢 Sozinho no respawn",""]+(HDR if solo else ["- ✅ todos os NPCs de fazer sozinho já foram concluídos"])
     if i==len(solo)+1: o+=["","### 🔴 Têm hunt de level alto (deixar por último)",""]+HDR
     f,t=prog(n)
     dif=[f"{p} ({TIER[p]})" for p,_ in hard_left(n)]
