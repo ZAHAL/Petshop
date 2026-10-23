@@ -41,10 +41,10 @@ Primeiro os NPCs que dá pra fazer **sozinho** (só T2, T1 e Super raro). Por ú
 | Maera (#18) | [ver no mapa](https://imgur.com/a/wVfbJ3e) | 8 Huntail ✅, 7 Gorebyss ✅, 7 Relicanth ✅, 8 Milotic ✅ | ✅ entregue |
 | Orlan (#16) | [ver no mapa](https://imgur.com/a/Vb1w5mD) | 15 Pelipper ✅, 15 Altaria ✅ | 🎁 falta pegar |
 | Verdra (#3) | [ver no mapa](https://imgur.com/a/zvLFSgR) | 15 Roselia ✅, 15 Cradily ✅ | ✅ entregue |
-| Ferris (#6) | [ver no mapa](https://imgur.com/a/PKI4Fgs) | 10 Mawile ✅, 10 Aggron ✅, 10 Metagross ✅ | 🎁 falta pegar |
+| Ferris (#6) | [ver no mapa](https://imgur.com/a/PKI4Fgs) | 10 Mawile ✅, 10 Aggron ✅, 10 Metagross ✅ | ✅ entregue |
 | Lucine (#12) | [ver no mapa](https://imgur.com/a/aLVehVK) | 8 Linoone ✅, 8 Delcatty ✅, 7 Kecleon ✅, 7 Swellow ✅ | 🎁 falta pegar |
 | Rohgar (#4) | [ver no mapa](https://imgur.com/a/SJ6dfJN) | 6 Zangoose ✅, 6 Seviper ✅, 6 Sharpedo ✅, 6 Mightyena ✅, 6 Absol ✅ | 🎁 falta pegar |
-| Veska (#13) | [ver no mapa](https://imgur.com/a/IEHYSjh) | 4 Volbeat ✅, 4 Illumise ✅, 5 Beautifly ✅, 5 Dustox ✅, 4 Masquerain ✅, 4 Ninjask ✅, 4 Shedinja ✅ | 🎁 falta pegar |
+| Veska (#13) | [ver no mapa](https://imgur.com/a/IEHYSjh) | 4 Volbeat ✅, 4 Illumise ✅, 5 Beautifly ✅, 5 Dustox ✅, 4 Masquerain ✅, 4 Ninjask ✅, 4 Shedinja ✅ | ✅ entregue |
 | Nyxen (#8) | [ver no mapa](https://imgur.com/a/xSn4850) | 10 Sableye ✅, 10 Banette ✅, 10 Dusclops ✅ | 🎁 falta pegar |
 | Voltrix (#9) | [ver no mapa](https://imgur.com/a/UanfcaO) | 30 Manectric ✅ | ✅ entregue |
 
