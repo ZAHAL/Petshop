@@ -25,7 +25,7 @@ Primeiro os NPCs que dá pra fazer **sozinho** (só T2, T1 e Super raro). Por ú
 
 | Ordem | NPC | Status | Missão pega | Mapa | Pokes (✅ = já matou) | Hunt difícil | Progresso |
 |---|---|---|---|---|---|---|---|
-| 1º | Selene (#17) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/IWLKYmI) | 5 Grumpig, 5 Chimecho, 5 Claydol, 5 Lunatone, 5 Solrock, 5 Gardevoir | 🔴 Gardevoir (Ultra raro) | 0 / 30 |
+| 1º | Selene (#17) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/IWLKYmI) | 5 Grumpig ✅, 5 Chimecho ✅, 5 Claydol ✅, 5 Lunatone ✅, 5 Solrock ✅, 5 Gardevoir | 🔴 Gardevoir (Ultra raro) | 25 / 30 |
 | 2º | Kaela (#15) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/tJym2M8) | 10 Sceptile, 10 Blaziken ✅, 10 Swampert ✅ | 🔴 Sceptile (Ultra raro) | 20 / 30 |
 | 3º | Glacis (#10) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/0e03YqH) | 15 Walrein, 15 Glalie | 🔴 Glalie (Ultra raro) | 0 / 30 |
 | 4º | Calder (#14) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/vqSpNqd) | 15 Camerupt, 15 Torkoal | 🔴 Torkoal (Ultra raro) | 0 / 30 |
@@ -48,7 +48,7 @@ Primeiro os NPCs que dá pra fazer **sozinho** (só T2, T1 e Super raro). Por ú
 | Nyxen (#8) | [ver no mapa](https://imgur.com/a/xSn4850) | 10 Sableye ✅, 10 Banette ✅, 10 Dusclops ✅ | ✅ entregue |
 | Voltrix (#9) | [ver no mapa](https://imgur.com/a/UanfcaO) | 30 Manectric ✅ | ✅ entregue |
 
-**Missões pegas: 12 / 17** · **Total: 350 / 510 shinies**
+**Missões pegas: 13 / 17** · **Total: 375 / 510 shinies**
 
 ## 🔴 Hunts de level alto (todas as NPCs)
 
@@ -72,21 +72,21 @@ Para juntar e fazer quando tiver time/level.
 | Sh Mightyena | 🟣 Ultra raro | Rohgar | ✅ 0 |
 | Sh Manectric | 🟣 Ultra raro | Voltrix | ✅ 0 |
 
-## 1º · Selene (NPC #17) ⏳
+## 1º · Selene (NPC #17) 🔄
 
-- [ ] Missão pega
+- [x] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/IWLKYmI)
 - Elemento: 🔮 Psíquico / pedra
-- Pokes: 5 Grumpig, 5 Chimecho, 5 Claydol, 5 Lunatone, 5 Solrock, 5 Gardevoir
+- Pokes: 5 Grumpig ✅, 5 Chimecho ✅, 5 Claydol ✅, 5 Lunatone ✅, 5 Solrock ✅, 5 Gardevoir
 - ➡️ Próximo: Kaela
 
 | Pokémon | Raridade | Como | Meta | Mortos | Faltam |
 |---|---|---|--:|--:|--:|
-| Sh Grumpig | 🟢 T1 | 🟢 Sozinho (respawn) | 5 | 0 | 5 |
-| Sh Chimecho | 🟢 T1 | 🟢 Sozinho (respawn) | 5 | 0 | 5 |
-| Sh Claydol | 🟢 T1 | 🟢 Sozinho (respawn) | 5 | 0 | 5 |
-| Sh Lunatone | 🟢 T1 | 🟢 Sozinho (respawn) | 5 | 0 | 5 |
-| Sh Solrock | 🟢 T1 | 🟢 Sozinho (respawn) | 5 | 0 | 5 |
+| Sh Grumpig | 🟢 T1 | 🟢 Sozinho (respawn) | 5 | 5 | ✅ 0 |
+| Sh Chimecho | 🟢 T1 | 🟢 Sozinho (respawn) | 5 | 5 | ✅ 0 |
+| Sh Claydol | 🟢 T1 | 🟢 Sozinho (respawn) | 5 | 5 | ✅ 0 |
+| Sh Lunatone | 🟢 T1 | 🟢 Sozinho (respawn) | 5 | 5 | ✅ 0 |
+| Sh Solrock | 🟢 T1 | 🟢 Sozinho (respawn) | 5 | 5 | ✅ 0 |
 | Sh Gardevoir | 🟣 Ultra raro | 🔴 Hunt lv alto | 5 | 0 | 5 |
 
 ## 2º · Kaela (NPC #15) 🔄

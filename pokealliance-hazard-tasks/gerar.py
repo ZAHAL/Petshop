@@ -10,7 +10,7 @@ N=[
 (15,"Kaela","tJym2M8","🌿🔥🌊 Iniciais",True,[("Sceptile",10),("Blaziken",10),("Swampert",10)],"Calder (Blaziken ↔ fogo/vulcão)"),
 (14,"Calder","vqSpNqd","🔥 Fogo / vulcão",False,[("Camerupt",15),("Torkoal",15)],"Ferris (caverna/montanha)"),
 (6,"Ferris","PKI4Fgs","⚙️ Aço / caverna",True,[("Aggron",10),("Mawile",10),("Metagross",10)],"Selene (Claydol/Lunatone/Solrock em caverna)"),
-(17,"Selene","IWLKYmI","🔮 Psíquico / pedra",False,[("Gardevoir",5),("Grumpig",5),("Chimecho",5),("Claydol",5),("Lunatone",5),("Solrock",5)],"Hadriel (Medicham é psíquico)"),
+(17,"Selene","IWLKYmI","🔮 Psíquico / pedra",True,[("Gardevoir",5),("Grumpig",5),("Chimecho",5),("Claydol",5),("Lunatone",5),("Solrock",5)],"Hadriel (Medicham é psíquico)"),
 (11,"Hadriel","ocIvomr","🥊 Lutador / normal",False,[("Hariyama",10),("Medicham",10),("Slaking",10)],"Lucine (Slaking ↔ normais de rota)"),
 (12,"Lucine","aLVehVK","⚪ Normal / rota",True,[("Linoone",8),("Delcatty",8),("Swellow",7),("Kecleon",7)],"Rohgar (pokes de campo/rota)"),
 (4,"Rohgar","SJ6dfJN","🌑 Sombrio / campo",True,[("Mightyena",6),("Zangoose",6),("Seviper",6),("Absol",6),("Sharpedo",6)],"Veska (rota/mato). Obs: Sharpedo é de água, pode sair junto com Nerida/Maera"),
@@ -30,7 +30,7 @@ ORDEM=["T2","T1","Super raro","Ultra raro","Lendário","Mítico"]  # mais fácil
 ICON={"T2":"⚪","T1":"🟢","Super raro":"🔵","Ultra raro":"🟣","Lendário":"🟠","Mítico":"🔴"}
 TIER={p:t for t,ps in TIERS.items() for p in ps.split()}
 SOLO={"T2","T1","Super raro"}
-MORTOS={"Tropius":7,"Manectric":30,"Milotic":8,"Mightyena":6,"Absol":6,"Crawdaunt":6,"Luvdisc":6,"Gorebyss":7,"Clamperl":6,"Huntail":8,"Relicanth":7,"Wailord":6,"Whiscash":6,"Breloom":8,"Shiftry":8,"Cacturne":7,"Cradily":15,"Roselia":15,"Metagross":10,"Blaziken":10,"Swampert":10,"Pelipper":15,"Altaria":15,"Delcatty":8,"Sableye":10,"Banette":10,"Dusclops":10,"Aggron":10,"Mawile":10,"Kecleon":7,"Linoone":8,"Swellow":7,"Seviper":6,"Zangoose":6,"Sharpedo":6,"Beautifly":5,"Dustox":5,"Masquerain":4,"Ninjask":4,"Volbeat":4,"Illumise":4,"Shedinja":4}
+MORTOS={"Tropius":7,"Manectric":30,"Milotic":8,"Mightyena":6,"Absol":6,"Crawdaunt":6,"Luvdisc":6,"Gorebyss":7,"Clamperl":6,"Huntail":8,"Relicanth":7,"Wailord":6,"Whiscash":6,"Breloom":8,"Shiftry":8,"Cacturne":7,"Cradily":15,"Roselia":15,"Metagross":10,"Blaziken":10,"Swampert":10,"Pelipper":15,"Altaria":15,"Delcatty":8,"Sableye":10,"Banette":10,"Dusclops":10,"Aggron":10,"Mawile":10,"Kecleon":7,"Linoone":8,"Swellow":7,"Seviper":6,"Zangoose":6,"Sharpedo":6,"Beautifly":5,"Dustox":5,"Masquerain":4,"Ninjask":4,"Volbeat":4,"Illumise":4,"Shedinja":4,"Grumpig":5,"Chimecho":5,"Claydol":5,"Lunatone":5,"Solrock":5}
 todos=[p for n in N for p,_ in n[5]]
 assert set(todos)==set(TIER), set(todos)^set(TIER)
 def rank(p): return ORDEM.index(TIER[p])
