@@ -27,7 +27,7 @@ Primeiro os NPCs que dá pra fazer **sozinho** (só T2, T1 e Super raro). Por ú
 |---|---|---|---|---|---|---|---|
 | 1º | Selene (#17) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/IWLKYmI) | 5 Grumpig ✅, 5 Chimecho ✅, 5 Claydol ✅, 5 Lunatone ✅, 5 Solrock ✅, 5 Gardevoir | 🔴 Gardevoir (Ultra raro) | 25 / 30 |
 | 2º | Kaela (#15) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/tJym2M8) | 10 Sceptile, 10 Blaziken ✅, 10 Swampert ✅ | 🔴 Sceptile (Ultra raro) | 20 / 30 |
-| 3º | Glacis (#10) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/0e03YqH) | 15 Walrein, 15 Glalie | 🔴 Glalie (Ultra raro) | 0 / 30 |
+| 3º | Glacis (#10) | 🔄 | ☑️ | [ver no mapa](https://imgur.com/a/0e03YqH) | 15 Walrein ✅, 15 Glalie | 🔴 Glalie (Ultra raro) | 15 / 30 |
 | 4º | Calder (#14) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/vqSpNqd) | 15 Camerupt, 15 Torkoal | 🔴 Torkoal (Ultra raro) | 0 / 30 |
 | 5º | Draven (#5) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/UvZJqKw) | 15 Salamence, 15 Flygon | 🔴 Flygon (Lendário), Salamence (Ultra raro) | 0 / 30 |
 | 6º | Hadriel (#11) | ⏳ | ⬜ | [ver no mapa](https://imgur.com/a/ocIvomr) | 10 Hariyama, 10 Medicham, 10 Slaking | 🔴 Slaking (Mítico) | 0 / 30 |
@@ -48,7 +48,7 @@ Primeiro os NPCs que dá pra fazer **sozinho** (só T2, T1 e Super raro). Por ú
 | Nyxen (#8) | [ver no mapa](https://imgur.com/a/xSn4850) | 10 Sableye ✅, 10 Banette ✅, 10 Dusclops ✅ | ✅ entregue |
 | Voltrix (#9) | [ver no mapa](https://imgur.com/a/UanfcaO) | 30 Manectric ✅ | ✅ entregue |
 
-**Missões pegas: 13 / 17** · **Total: 375 / 510 shinies**
+**Missões pegas: 14 / 17** · **Total: 390 / 510 shinies**
 
 ## 🔴 Hunts de level alto (todas as NPCs)
 
@@ -103,17 +103,17 @@ Para juntar e fazer quando tiver time/level.
 | Sh Blaziken | 🟣 Ultra raro | 🔴 Hunt lv alto | 10 | 10 | ✅ 0 |
 | Sh Swampert | 🟣 Ultra raro | 🔴 Hunt lv alto | 10 | 10 | ✅ 0 |
 
-## 3º · Glacis (NPC #10) ⏳
+## 3º · Glacis (NPC #10) 🔄
 
-- [ ] Missão pega
+- [x] Missão pega
 - 📍 Mapa: [ver no mapa](https://imgur.com/a/0e03YqH)
 - Elemento: ❄️ Gelo / água
-- Pokes: 15 Walrein, 15 Glalie
+- Pokes: 15 Walrein ✅, 15 Glalie
 - ➡️ Próximo: Calder
 
 | Pokémon | Raridade | Como | Meta | Mortos | Faltam |
 |---|---|---|--:|--:|--:|
-| Sh Walrein | 🔵 Super raro | 🟢 Sozinho (respawn) | 15 | 0 | 15 |
+| Sh Walrein | 🔵 Super raro | 🟢 Sozinho (respawn) | 15 | 15 | ✅ 0 |
 | Sh Glalie | 🟣 Ultra raro | 🔴 Hunt lv alto | 15 | 0 | 15 |
 
 ## 4º · Calder (NPC #14) ⏳
